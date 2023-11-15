@@ -1,0 +1,144 @@
+/*********************** header section ********************/
+.header-section {
+    position: relative; 
+    z-index: 1;
+    
+    
+    @include screen-992 {
+        background-color: $secondary-color;
+        .crete-navbar {
+            box-shadow: none;
+        }
+    }
+}
+
+.container-header{
+    max-width: 1265px;
+    margin: 0 auto;
+    font-family: $template-font;
+}
+
+.crete-navbar {
+    margin-top: 32px;
+    padding: 0 40px;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    background-color: $secondary-color;
+    font-family: $template-font !important;
+    @include screen-992 {
+        padding: 15px;
+    }  
+    
+}
+
+.logo-dsgn{
+    width: 200px;
+    
+
+    @include screen-992 {
+        width: 150px;
+        
+    }
+    
+}
+
+.crete-navmenu {
+    text-align: end;
+    & > ul {
+        display: inline-block;
+        & > li {
+            & > a {
+                position: relative;
+                // &::before {
+                //     content: ''; 
+                //     position: absolute;
+                //     bottom: 25px;
+                //     left: 50%;
+                //     transform: translateX(-50%);
+                //     width: 0;
+                //     height: 2px;
+                //     background-color: $secondary-color;
+                //     transition: $transition-base;
+                // }
+                // &:hover {
+                //     &::before {
+                //         width: calc(100% - 32px);
+                //     }
+                // }
+            }
+        }
+        li {
+            display: inline-block;
+            position: relative;
+            a {
+                display: block;
+                padding: 55px 30px;
+                font-weight: 500;
+                color: $text-color;
+                text-transform: capitalize;
+                font-size: 18px;
+
+                @include large-screen {
+                    padding: 55px 20px;
+                }
+                
+            }
+ 
+            
+            &:hover {
+                & > a {
+                    color: $primary-color;
+                }
+                &::after {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.canvus-menu-toggle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-base);
+    &:hover {
+        background-color: var(--headings-color);
+        color: var(--white-color);
+    }
+    @include screen-992 {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
+}
+
+
+/****************** sticky header ****************/
+.header-sticky {
+    &.sticky-on {
+        position: fixed !important; 
+        top: 0; 
+        left: 0;
+        width: 100%;
+        animation: 1s fadeInDown;
+        z-index: 100;
+        background-color: var(--white-color);
+        box-shadow: var(--box-shadow);
+        z-index: 200;
+        .infobar {
+            display: none !important;
+        }
+        .crete-navbar {
+            box-shadow: none;
+        }
+    }
+}
+
