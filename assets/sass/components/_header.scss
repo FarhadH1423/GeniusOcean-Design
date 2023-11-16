@@ -21,7 +21,7 @@
 .crete-navbar {
     margin-top: 32px;
     padding: 0 40px;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: var(--box-shadow);
     background-color: $secondary-color;
     font-family: $template-font !important;
@@ -32,8 +32,8 @@
 }
 
 .logo-dsgn{
-    width: 200px;
     
+    padding-left: 20px;
 
     @include screen-992 {
         width: 150px;
@@ -80,8 +80,7 @@
 
                 @include large-screen {
                     padding: 55px 20px;
-                }
-                
+                }               
             }
  
             
