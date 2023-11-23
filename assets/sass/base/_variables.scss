@@ -1,52 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
+$primary-color: #e3106e;
+$primary-shade-800: #fd3392;
+$primary-shade-700: #fd66ad;
+$primary-shade-600: #fe99c9;
+$primary-shade-500: #fecce4;
+$primary-shade-400: #ffe5f1;
+$primary-shade-300: #fff2f8;
 
-
-$primary-color: #E3106E;
-$primary-shade-800: #FD3392;
-$primary-shade-700: #FD66AD;
-$primary-shade-600: #FE99C9;
-$primary-shade-500: #FECCE4;
-$primary-shade-400: #FFE5F1;
-$primary-shade-300: #FFF2F8;
-
-$secondary-color: #04032E;
+$secondary-color: #04032e;
 $secondary-shade-800: #020134;
-$secondary-shade-700: #35345D;
+$secondary-shade-700: #35345d;
 $secondary-shade-600: #676785;
-$secondary-shade-500: #9A99AE;
-$secondary-shade-400: #CCCCD6;
-$secondary-shade-300: #E6E6EB;
+$secondary-shade-500: #9a99ae;
+$secondary-shade-400: #ccccd6;
+$secondary-shade-300: #e6e6eb;
 
-
-$text-color: #FFFFFF;
-$text-shade-800: #CCCCCC;
+$text-color: #ffffff;
+$text-shade-800: #cccccc;
 $text-shade-700: #999999;
 $text-shade-600: #666666;
 $text-shade-500: #333333;
 $text-shade-400: #191919;
-$text-shade-300: #0D0D0D;
+$text-shade-300: #0d0d0d;
 
-$error-state-color: #F63333;
-$warning-state-color: #F8BF2D;
-$info-state-color: #2F5CFB;
-$success-state-color: #1EC24C;
-$disable-state-color: #D8D8D8;
+$error-state-color: #f63333;
+$warning-state-color: #f8bf2d;
+$info-state-color: #2f5cfb;
+$success-state-color: #1ec24c;
+$disable-state-color: #d8d8d8;
 
 $bg-dark-1: #000000;
-$bg-dark-2: #161A1E;
-$bg-dark-3: #141C26;
+$bg-dark-2: #161a1e;
+$bg-dark-3: #141c26;
 
-$bg-white-1: #FFFFFF;
-$bg-white-2: #E0E0E0;
-$bg-white-3: #ADADAD;
+$bg-white-1: #ffffff;
+$bg-white-2: #e0e0e0;
+$bg-white-3: #adadad;
 
-$bg-counter-box: #38117F;
+$bg-counter-box: #38117f;
+$bg-calcultor-section: #04032e;
+$bg-disable-form: #35345d;
+$bg-choose-us: #240255;
 
+// $business-plan: linear-gradient(180deg, #0979B6 0%, #184ACA 108.15%);
 
 $box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
 
-$template-font: 'IBM Plex Sans', sans-serif;
-$heading-font: 'IBM Plex Sans', sans-serif;
+$template-font: "IBM Plex Sans", sans-serif;
+$heading-font: "IBM Plex Sans", sans-serif;
 
 $transition-base: all 0.3s;
