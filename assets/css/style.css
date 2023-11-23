@@ -1284,6 +1284,52 @@ p {
     .primary-outline-offer:hover::before {
       top: -8px; }
 
+.active-tab-btn {
+  padding: 14px 51px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #240255;
+  color: #ffffff; }
+  .active-tab-btn.active {
+    background-color: #e3106e;
+    color: #ffffff; }
+    .active-tab-btn.active::before {
+      content: "";
+      position: absolute;
+      left: -90px;
+      top: -135%;
+      width: 190%;
+      height: 135%;
+      background-color: #ffffff;
+      z-index: -1;
+      border-radius: 50%;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .active-tab-btn.active:hover {
+      background-color: transparent;
+      color: #0d0d0d; }
+      .active-tab-btn.active:hover::before {
+        top: -10px; }
+  @media (max-width: 767.98px) {
+    .active-tab-btn {
+      padding: 8px 10px; } }
+
+.state-left-btn {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px; }
+
+.state-right-btn {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px; }
+
 /************************ mobile menu start ****************/
 .mobile-menu {
   width: 300px;
@@ -2405,7 +2451,16 @@ p {
   padding-top: 150px;
   padding-bottom: 50px;
   background-color: #04032e;
-  background-size: 100% auto; }
+  background-size: 100% auto;
+  position: relative; }
+  .stat-section .stat-section-img {
+    width: 100%;
+    height: 554px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0; }
   .stat-section .stat-section-header {
     color: #ffffff;
     -webkit-box-pack: center;
@@ -2430,10 +2485,15 @@ p {
       max-width: 558px;
       margin: 0 auto; }
   .stat-section .stat-table {
-    padding: 50px 72px; }
+    padding: 50px 72px;
+    position: relative;
+    z-index: 1; }
     .stat-section .stat-table .custom-table {
       border-radius: 26px;
-      overflow: hidden; }
+      -webkit-box-shadow: 0px 30px 30px -20px rgba(255, 255, 255, 0.42);
+      box-shadow: 0px 30px 30px -20px rgba(255, 255, 255, 0.42);
+      overflow: hidden;
+      min-width: 800px; }
     .stat-section .stat-table .tb-row {
       color: #ffffff;
       height: 80px; }
