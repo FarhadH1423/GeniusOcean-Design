@@ -7,15 +7,18 @@
   margin-top: -200px;
   background-repeat: no-repeat;
   background-size: cover;
+
   .hero-content {
     width: 577px;
     padding-top: 269px;
     // margin-left: 72px;
     color: $text-color;
+
     @include screen-768 {
       width: initial;
     }
   }
+
   .hero-p {
     width: 532px;
     font-size: 20px;
@@ -24,6 +27,7 @@
     line-height: 32px;
     color: $text-color;
   }
+
   .hero-image {
     right: -90px;
     bottom: 0;
@@ -34,47 +38,58 @@
     background-position: center bottom;
     background-size: cover;
   }
+
   @include screen-1700 {
     .hero-image {
       right: -150px;
     }
   }
+
   @include screen-1400 {
     .hero-image {
       right: -300px;
     }
   }
+
   @include large-screen {
     background-size: cover;
   }
+
   @include screen-992 {
     .hero-content-left {
       margin-bottom: 60px;
     }
   }
+
   @include screen-768 {
     height: 700px;
     margin-top: -100px;
+
     .hero-content {
       padding-top: 200px;
     }
+
     .hero-p {
       width: 100%;
     }
+
     .hero-image {
       right: 0;
       bottom: -100px;
       position: absolute;
     }
   }
+
   @include portrait-phone {
     .hero-content {
       margin-left: 20px;
     }
+
     .hero-header {
       font-size: 36px;
       width: 350px;
     }
+
     .hero-p {
       font-size: 16px;
       width: 300px;
@@ -90,6 +105,7 @@
       font-size: 30px;
       width: 300px;
     }
+
     .hero-p {
       font-size: 16px;
       width: 300px;
@@ -106,18 +122,22 @@
       font-size: 25px;
       width: 220px;
     }
+
     .hero-p {
       font-size: 14px;
       width: 220px;
     }
   }
 }
+
 .hero-content-left {
   h1 {
     color: var(--white-color);
   }
+
   .primary-outline {
     border-color: var(--white-color);
+
     &:hover {
       border-color: var(--black-light);
     }
@@ -129,6 +149,7 @@
 .counter-section {
   padding: 140px 0;
   background-color: $secondary-color;
+
   .counter-box {
     padding: 50px 30px;
     background-color: $bg-counter-box;
@@ -136,14 +157,17 @@
     text-align: center;
     transition: $transition-base;
     position: relative;
+
     &:hover {
       box-shadow: var(--box-shadow);
     }
+
     h3 {
       font-size: 64px;
       margin-bottom: 10px;
       color: $text-color;
     }
+
     p {
       font-size: 32px;
       color: $text-color;
@@ -156,6 +180,7 @@
       transform: translateX(-50%);
       width: 100px;
       height: 100px;
+
       .icon-box {
         background-color: white;
         width: 80px;
@@ -170,6 +195,7 @@
         transform: translate(-50%, -50%);
         z-index: 11;
       }
+
       .overlay-box {
         position: absolute;
         top: 0;
@@ -184,10 +210,12 @@
 
     @include screen-400 {
       margin-bottom: 80px;
+
       h3 {
         padding-top: 10px;
         font-size: 40px;
       }
+
       p {
         font-size: 20px;
       }
@@ -195,10 +223,12 @@
 
     @include screen-460 {
       margin-bottom: 80px;
+
       h3 {
         padding-top: 10px;
         font-size: 40px;
       }
+
       p {
         font-size: 20px;
       }
@@ -206,10 +236,12 @@
 
     @include portrait-phone {
       margin-bottom: 80px;
+
       h3 {
         padding-top: 10px;
         font-size: 40px;
       }
+
       p {
         font-size: 20px;
       }
@@ -217,10 +249,12 @@
 
     @include screen-768 {
       margin-bottom: 80px;
+
       h3 {
         padding-top: 10px;
         font-size: 40px;
       }
+
       p {
         font-size: 20px;
       }
@@ -228,10 +262,12 @@
 
     @include screen-992 {
       margin-bottom: 80px;
+
       h3 {
         padding-top: 10px;
         font-size: 40px;
       }
+
       p {
         font-size: 20px;
       }
@@ -239,10 +275,12 @@
 
     @include large-screen {
       margin-bottom: 80px;
+
       h3 {
         padding-top: 10px;
         font-size: 40px;
       }
+
       p {
         font-size: 20px;
       }
@@ -250,10 +288,12 @@
 
     @include screen-1260 {
       margin-bottom: 80px;
+
       h3 {
         padding-top: 10px;
         font-size: 40px;
       }
+
       p {
         font-size: 20px;
       }
@@ -261,16 +301,19 @@
 
     @include screen-1290 {
       margin-bottom: 80px;
+
       h3 {
         padding-top: 10px;
         font-size: 40px;
       }
+
       p {
         font-size: 20px;
       }
     }
   }
 }
+
 // About Us Section
 
 .about-us-section {
@@ -279,17 +322,20 @@
   background-color: $bg-counter-box;
   position: relative;
   overflow: hidden;
+
   .about-img {
     position: absolute;
     right: 0;
     bottom: 0;
     // max-width: 946px;
   }
+
   h6 {
     color: $text-color;
     font-size: 20;
     position: relative;
     padding-left: 80px;
+
     &::before {
       content: "";
       position: absolute;
@@ -300,13 +346,16 @@
       background-color: $primary-color;
     }
   }
+
   h2 {
     color: $text-color;
   }
+
   .about-paragraph {
     color: $text-color;
     font-weight: 500;
   }
+
   @include screen-1400 {
     .about-img {
       max-width: 678px;
@@ -317,12 +366,15 @@
     .about-img {
       z-index: 0;
     }
+
     h6 {
       font-size: 16px;
     }
+
     .about-paragraph {
       font-size: 14px;
     }
+
     .template-btn {
       font-size: 16px;
     }
@@ -332,9 +384,11 @@
     .about-img {
       display: none;
     }
+
     h6 {
       font-size: 16px;
     }
+
     .about-paragraph {
       font-size: 14px;
     }
@@ -344,6 +398,7 @@
     h6 {
       font-size: 16px;
     }
+
     .about-paragraph {
       font-size: 14px;
     }
@@ -353,9 +408,11 @@
     .about-img {
       display: none;
     }
+
     h6 {
       font-size: 16px;
     }
+
     .about-paragraph {
       font-size: 14px;
     }
@@ -365,12 +422,15 @@
     .about-img {
       display: none;
     }
+
     h6 {
       font-size: 16px;
     }
+
     .about-paragraph {
       font-size: 14px;
     }
+
     .about-btn {
       flex-wrap: wrap;
     }
@@ -380,12 +440,15 @@
     .about-img {
       display: none;
     }
+
     h6 {
       font-size: 16px;
     }
+
     .about-paragraph {
       font-size: 14px;
     }
+
     .about-btn {
       flex-wrap: wrap;
     }
@@ -404,6 +467,7 @@
     font-size: 20;
     position: relative;
     padding-left: 80px;
+
     &::before {
       content: "";
       position: absolute;
@@ -414,13 +478,16 @@
       background-color: $primary-color;
     }
   }
+
   h2 {
     color: $text-color;
   }
+
   .calculator-paragraph {
     color: $text-color;
     font-weight: 500;
   }
+
   .calcultor-img {
     width: 700px;
     position: absolute;
@@ -428,12 +495,15 @@
     bottom: 260px;
     margin-left: 200px;
   }
+
   .form-areas {
     background-color: $bg-counter-box;
     border-radius: 10px;
     padding: 50px;
+
     .form-feild {
       padding: 50px;
+
       .form-inpt {
         border-radius: 10px;
         padding: 10px;
@@ -446,6 +516,7 @@
           height: 50px;
           background-color: $bg-calcultor-section;
           color: $text-color;
+
           &::placeholder {
             color: $text-color;
             font-size: 16px;
@@ -456,17 +527,20 @@
           height: 50px;
           background-color: $bg-disable-form;
           color: $text-color;
+
           &::placeholder {
             color: $text-color;
             font-size: 16px;
           }
         }
       }
+
       .btn-forms {
         width: 100%;
       }
     }
   }
+
   @include screen-1860 {
     .calcultor-img {
       width: 650px;
@@ -475,11 +549,13 @@
       bottom: 260px;
       margin-left: 150px;
     }
+
     .form-areas {
       padding: 20px;
       left: 0px;
     }
   }
+
   @include screen-1700 {
     .calcultor-img {
       width: 600px;
@@ -488,10 +564,12 @@
       bottom: 280px;
       margin-left: 150px;
     }
+
     .form-areas {
       padding: 18px;
     }
   }
+
   @include screen-1600 {
     .calcultor-img {
       width: 600px;
@@ -500,10 +578,12 @@
       bottom: 280px;
       margin-left: 100px;
     }
+
     .form-areas {
       padding: 16px;
     }
   }
+
   @include screen-1460 {
     .calcultor-img {
       width: 600px;
@@ -512,6 +592,7 @@
       bottom: 280px;
       margin-left: 20px;
     }
+
     .form-areas {
       padding: 10px;
     }
@@ -525,6 +606,7 @@
       bottom: 280px;
       margin-left: 20px;
     }
+
     .form-areas {
       padding: 10px;
     }
@@ -538,10 +620,12 @@
       bottom: 280px;
       margin-left: 20px;
     }
+
     .form-areas {
       padding: 10px;
     }
   }
+
   @include large-screen {
     .calcultor-img {
       width: 480px;
@@ -550,6 +634,7 @@
       bottom: 280px;
       margin-left: 20px;
     }
+
     .form-areas {
       padding: 10px;
     }
@@ -563,6 +648,7 @@
       bottom: 320px;
       margin-left: 20px;
     }
+
     .form-areas {
       padding: 5px;
     }
@@ -576,6 +662,7 @@
       bottom: 320px;
       margin-left: 20px;
     }
+
     .form-areas {
       padding: 5px;
     }
@@ -584,6 +671,7 @@
   @include screen-768 {
     padding-top: 10px;
     padding-bottom: 60px;
+
     .calcultor-img {
       width: 380px;
       position: relative;
@@ -593,8 +681,10 @@
       top: 0px;
       bottom: 420px;
     }
+
     .calculation-details {
       padding: 60px;
+
       .calculator-paragraph {
         color: $text-color;
         font-weight: 500;
@@ -606,6 +696,7 @@
   @include screen-460 {
     padding-top: 10px;
     padding-bottom: 40px;
+
     .calcultor-img {
       width: 200px;
       position: relative;
@@ -615,8 +706,10 @@
       top: 0px;
       bottom: 420px;
     }
+
     .calculation-details {
       padding: 30px;
+
       .calculator-paragraph {
         color: $text-color;
         font-weight: 400;
@@ -632,11 +725,13 @@
   padding-top: 100px;
   padding-bottom: 50px;
   background-color: $bg-choose-us;
+
   .choose-section-header {
     color: $text-color;
     justify-content: center;
     text-align: center;
     padding-bottom: 110px;
+
     h6 {
       color: $text-color;
       font-size: 20;
@@ -654,11 +749,13 @@
         background-color: $primary-color;
       }
     }
+
     p {
       max-width: 558px;
       margin: 0 auto;
     }
   }
+
   .choose-us-box {
     padding: 50px 30px;
     background-color: $bg-counter-box;
@@ -667,14 +764,17 @@
     transition: $transition-base;
     position: relative;
     margin-bottom: 80px;
+
     &:hover {
       box-shadow: $box-shadow;
     }
+
     h5 {
       padding-top: 20px;
       margin-bottom: 10px;
       color: $text-color;
     }
+
     p {
       color: $text-color;
     }
@@ -686,6 +786,7 @@
       transform: translateX(-50%);
       width: 100px;
       height: 100px;
+
       .icon-box {
         background-color: $bg-counter-box;
         width: 80px;
@@ -699,10 +800,12 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 11;
+
         .fas {
           color: $text-color;
         }
       }
+
       .overlay-box {
         position: absolute;
         top: 0;
@@ -715,24 +818,29 @@
       }
     }
   }
+
   @include large-screen {
     .choose-us-box {
       h5 {
         font-size: 18px;
       }
+
       p {
         font-size: 14px;
       }
     }
   }
+
   @include screen-768 {
     .choose-section-header {
       h6 {
         font-size: 18px;
       }
+
       h2 {
         font-size: 30px;
       }
+
       p {
         font-size: 14px;
       }
@@ -747,11 +855,13 @@
   padding-bottom: 0px;
   background-color: $bg-calcultor-section;
   background-size: 100% auto;
+
   .offer-section-header {
     color: $text-color;
     justify-content: center;
     text-align: center;
     padding-bottom: 110px;
+
     h6 {
       color: $text-color;
       font-size: 20;
@@ -769,6 +879,7 @@
         background-color: $primary-color;
       }
     }
+
     p {
       max-width: 558px;
       margin: 0 auto;
@@ -782,6 +893,7 @@
     transition: $transition-base;
     position: relative;
     margin-bottom: 100px;
+
     &:hover {
       box-shadow: $box-shadow;
     }
@@ -793,6 +905,7 @@
       transform: translateX(-50%);
       width: 100px;
       height: 100px;
+
       .icon-box {
         // background-color: $bg-counter-box;
         width: 262px;
@@ -806,11 +919,13 @@
         left: 51%;
         transform: translate(-50%, -50%);
         z-index: 11;
+
         h6 {
           color: $text-color;
           font-size: 20px;
         }
       }
+
       .overlay-box {
         position: absolute;
         top: 36px;
@@ -821,12 +936,15 @@
         height: 72px;
         border-radius: 40px;
       }
+
       @include large-screen {
         top: -15%;
+
         .icon-box {
           width: 232px;
           height: 52px;
         }
+
         .overlay-box {
           width: 253px;
           height: 62px;
@@ -837,11 +955,13 @@
 
       @include screen-460 {
         top: -15%;
+
         .icon-box {
           width: 180px;
           height: 50px;
           top: 91px;
         }
+
         .overlay-box {
           width: 195px;
           height: 62px;
@@ -850,22 +970,28 @@
         }
       }
     }
+
     .offer-content {
       padding-left: 30px;
+
       .offer-price {
         h4 {
           text-align: start;
+
           span {
             font-size: 18px;
           }
+
           color: $text-color;
         }
       }
+
       hr {
         color: $text-color;
         opacity: 1.25;
       }
-      ul > li {
+
+      ul>li {
         color: $text-color;
         font-size: 22px;
         font-weight: 500;
@@ -882,11 +1008,12 @@
 
 // Stat Section
 .stat-section {
-  padding-top: 150px;
+  padding-top: 80px;
   padding-bottom: 50px;
   background-color: $bg-calcultor-section;
   background-size: 100% auto;
   position: relative;
+
   .stat-section-img {
     width: 100%;
     height: 554px;
@@ -897,11 +1024,13 @@
     right: 0;
     z-index: 0;
   }
+
   .stat-section-header {
     color: $text-color;
     justify-content: center;
     text-align: center;
-    padding-bottom: 110px;
+    padding-bottom: 10px;
+
     h6 {
       color: $text-color;
       font-size: 20;
@@ -919,15 +1048,23 @@
         background-color: $primary-color;
       }
     }
+
     p {
       max-width: 558px;
       margin: 0 auto;
+
+      @include portrait-phone {
+        font-size: 14px;
+      }
     }
+
   }
+
   .stat-table {
     padding: 50px 72px;
     position: relative;
     z-index: 1;
+
     .custom-table {
       border-radius: 26px;
       box-shadow: 0px 30px 30px -20px rgba(255, 255, 255, 0.42);
@@ -939,10 +1076,12 @@
       color: $text-color;
       height: 80px;
     }
+
     .tb-head {
       background-color: $bg-counter-box;
       vertical-align: middle;
     }
+
     .tb-body {
       background-color: $bg-choose-us;
       vertical-align: middle;
@@ -956,6 +1095,7 @@
     tr {
       border-color: #000000;
     }
+
     th,
     td {
       font-size: 20px;
@@ -963,9 +1103,71 @@
       line-height: 32px;
       padding-left: 40px;
     }
+
     .tb-data-username {
       padding-left: 10px;
     }
+
+    @include portrait-phone {
+      padding: 50px 30px;
+    }
+  }
+}
+
+
+
+// Gateways Sections
+
+
+.gateways-section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: $bg-calcultor-section;
+  background-size: 100% auto;
+  // position: relative;
+
+  .gateways-section-header {
+    color: $text-color;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+
+    h6 {
+      color: $text-color;
+      font-size: 20;
+      position: relative;
+      display: inline-block;
+
+      &::before {
+        content: "";
+        position: absolute;
+
+        top: 12px;
+        right: 105%;
+        width: 73px;
+        height: 1px;
+        background-color: $primary-color;
+      }
+    }
+
+    p {
+      max-width: 558px;
+      margin: 0 auto;
+
+      @include portrait-phone {
+        font-size: 14px;
+      }
+    }
+
+  }
+
+
+  .gateways-box {
+    background-color: $bg-counter-box;
+    padding: 45px;
+    border-radius: 8px;
+    // max-width: 170px;
+    // margin-right: 24px;
   }
 }
 
@@ -975,6 +1177,7 @@
   bottom: 40px;
   max-width: 280px;
   border-radius: 15px;
+
   &::before {
     content: "";
     position: absolute;
@@ -986,6 +1189,7 @@
     transition: var(--transition-base);
     border-radius: 15px;
   }
+
   &:hover {
     &::before {
       left: -10px;
@@ -1014,6 +1218,7 @@
     height: 1px;
     background-color: var(--primary-color);
   }
+
   &.text-white {
     &::before {
       background-color: var(--white-color);
@@ -1032,6 +1237,7 @@
     top: 30%;
     left: -80px;
   }
+
   .circle-shape-2 {
     width: 800px;
     height: 800px;
@@ -1049,38 +1255,47 @@
   display: flex;
   justify-content: center;
 }
+
 .service-card {
   padding: 50px;
+
   .explore-btn {
     color: var(--headings-color);
     font-weight: 600;
     transition: var(--transition-base);
     font-size: 17px;
+
     svg {
       path {
         transition: var(--transition-base);
       }
     }
   }
+
   &:hover {
     .icon-wrapper {
       img {
         animation: 0.3s shake;
       }
     }
+
     .explore-btn {
       color: var(--primary-color);
+
       svg {
         animation: 0.3s toLeftFromRight linear;
+
         path {
           fill: var(--primary-color);
         }
       }
     }
   }
+
   @include screen-992 {
     flex-wrap: wrap;
   }
+
   @include portrait-phone {
     padding: 32px;
   }
@@ -1099,10 +1314,12 @@
 .cta-box {
   padding: 40px;
   max-width: 600px;
+
   .icon-wrapper {
     width: 55px;
     height: 55px;
   }
+
   .icon-tel {
     width: 73px;
     height: 73px;
@@ -1111,6 +1328,7 @@
     position: relative;
     z-index: 1;
     animation: 1s ripple-animation linear infinite;
+
     span {
       position: relative;
     }
@@ -1129,15 +1347,18 @@
   flex-direction: column;
   padding: 8px 24px;
   text-align: center;
+
   h3 {
     margin-bottom: 2px;
   }
+
   h6 {
     line-height: 1.2em;
   }
 }
 
 .cr-pf-slider {
+
   .prev-arrow,
   .next-arrow {
     width: 60px;
@@ -1148,17 +1369,21 @@
     border-radius: 50%;
     position: absolute;
     top: -54px;
+
     &:hover {
       background-color: var(--primary-color);
       color: var(--white-color);
     }
+
     @include portrait-phone {
       display: none;
     }
   }
+
   .prev-arrow {
     right: 76px;
   }
+
   .next-arrow {
     right: 0;
   }
@@ -1167,9 +1392,11 @@
 .pf-box {
   border-radius: 12px;
   overflow: hidden;
+
   img {
     transition: var(--transition-base);
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -1182,6 +1409,7 @@
     transition: var(--transition-base);
     z-index: 1;
   }
+
   .pf-content {
     position: absolute;
     left: 50px;
@@ -1189,6 +1417,7 @@
     z-index: 2;
     max-width: calc(100% - 100px);
   }
+
   .explore-btn {
     position: absolute;
     left: 50px;
@@ -1204,49 +1433,59 @@
     z-index: 1;
     opacity: 0;
     visibility: hidden;
+
     &:hover {
       background-color: var(--primary-color);
       border-color: var(--primary-color);
       color: var(--white-color);
+
       svg {
         animation: 0.3s toLeftFromRight;
       }
     }
   }
+
   h3,
   p {
     opacity: 0;
     visibility: hidden;
     transition: var(--transition-base);
   }
+
   h3 {
     font-size: 30px;
     line-height: 1.2em;
     margin-bottom: 16px;
   }
+
   &:hover {
     img {
       transform: scale(1.1);
     }
+
     &::before {
       opacity: 0.7;
     }
+
     .explore-btn {
       opacity: 1;
       visibility: visible;
       animation: 0.5s theme_fadeInUp;
     }
+
     h3 {
       animation: 0.6s theme_fadeInUp;
       opacity: 1;
       visibility: visible;
     }
+
     p {
       animation: 0.7s theme_fadeInUp;
       opacity: 1;
       visibility: visible;
     }
   }
+
   &.box-sm {
     .explore-btn {
       width: 60px;
@@ -1254,6 +1493,7 @@
       left: 24px;
       top: 32px;
     }
+
     .pf-content {
       left: 24px;
       bottom: 32px;
@@ -1264,6 +1504,7 @@
 
 /********************* feedback section start **********************/
 .feedback-section {
+
   .circle-shape-1,
   .circle-shape-2 {
     width: 600px;
@@ -1271,26 +1512,32 @@
     background-color: #272727;
     border-radius: 50%;
   }
+
   .circle-shape-1 {
     top: -200px;
     left: -130px;
   }
+
   .circle-shape-2 {
     bottom: -270px;
     right: -110px;
   }
 }
+
 .feedback-slider {
+
   .prev-arrow,
   .next-arrow {
     position: absolute;
     top: -120px;
+
     svg {
       path {
         opacity: 0.2;
         transition: var(--transition-base);
       }
     }
+
     &:hover {
       svg {
         path {
@@ -1299,35 +1546,45 @@
       }
     }
   }
+
   .prev-arrow {
     right: 80px;
   }
+
   .next-arrow {
     right: 0;
   }
+
   @include screen-768 {
+
     .prev-arrow,
     .next-arrow {
       display: none;
     }
   }
 }
+
 .feedback-single {
   border-radius: 40px;
   padding: 70px;
   display: flex;
   gap: 65px;
+
   .clients-comment {
     font-size: 30px;
   }
+
   @include screen-992 {
     padding: 60px;
-    & > img {
+
+    &>img {
       display: none;
     }
   }
+
   @include portrait-phone {
     padding: 40px 32px;
+
     .clients-comment {
       font-size: 22px;
     }
@@ -1340,9 +1597,11 @@
   background-color: var(--gray-100);
   border-radius: 30px;
   transition: var(--transition-base);
+
   h3 {
     font-size: 36px;
   }
+
   .package-icon {
     width: 120px;
     height: 120px;
@@ -1352,39 +1611,49 @@
     padding: 18px;
     border: 10px solid var(--gray-100);
   }
+
   .pricing-box-content {
     padding: 110px 40px 40px;
     background-color: var(--white-color);
     border-radius: 30px;
     margin-top: -60px;
+
     .pricing-title {
       span {
         margin-left: -16px;
         color: var(--text-color);
       }
     }
+
     .pricing-features {
       li {
         font-weight: 500;
-        + li {
+
+        +li {
           margin-top: 10px;
         }
       }
     }
+
     .template-btn {
       border-radius: 30px;
+
       &::after {
         border-radius: 30px;
       }
     }
   }
+
   padding: 50px 32px 32px;
+
   &:hover {
     background-color: var(--primary-color);
+
     h3,
     .subtitle {
       color: var(--white-color);
     }
+
     .package-icon {
       border-color: var(--primary-color);
     }
@@ -1393,34 +1662,41 @@
 
 /************************************* contact section start ********************************/
 .contact-section {
+
   .circle-shape,
   .circle-shape-2 {
     background-color: #272727;
   }
+
   .circle-shape {
     width: 600px;
     height: 600px;
     left: -400px;
     bottom: -400px;
   }
+
   .circle-shape-2,
   .circle-shape-3 {
     width: 800px;
     height: 800px;
   }
+
   .circle-shape-2 {
     right: -200px;
     top: -200px;
   }
+
   .circle-shape-3 {
     border: 2px solid #272727;
     left: -440px;
     bottom: -440px;
   }
+
   &.dark-bg-color {
     .lead {
       color: #898989;
     }
+
     .contact-info-list {
       li {
         span {
@@ -1430,23 +1706,28 @@
     }
   }
 }
+
 .contact-info-list {
   li {
     .icon {
       width: 80px;
       height: 80px;
     }
+
     h6 {
       font-size: 22px;
       line-height: 1.3em;
       transition: var(--transition-base);
+
       &:hover {
         color: var(--primary-color) !important;
       }
     }
-    + li {
+
+    +li {
       margin-top: 40px;
     }
+
     &:hover {
       .icon {
         img {
@@ -1460,6 +1741,7 @@
 .contact-form-box {
   padding: 60px;
   border-radius: 30px;
+
   .contact-form {
     label {
       display: block;
@@ -1468,6 +1750,7 @@
       margin-bottom: 24px;
     }
   }
+
   @include portrait-phone {
     padding: 32px;
   }
@@ -1478,6 +1761,7 @@
   border-radius: 25px;
   overflow: hidden;
   z-index: 1;
+
   .overlay-bg {
     position: absolute;
     left: -110%;
@@ -1490,11 +1774,13 @@
     opacity: 0;
     z-index: 1;
   }
+
   .feature-image {
     img {
       transition: var(--transition-base);
     }
   }
+
   .card-content-wrapper {
     width: calc(100% - 60px);
     position: absolute;
@@ -1503,10 +1789,12 @@
     bottom: 30px;
     padding: 42px;
     border-radius: 25px;
+
     .blog-meta {
       span {
-        + span {
+        +span {
           position: relative;
+
           &::before {
             content: "";
             position: absolute;
@@ -1520,16 +1808,20 @@
         }
       }
     }
+
     .title {
       font-size: 30px;
       line-height: 38px;
     }
+
     .description {
       display: none;
     }
+
     .explore-btn {
       font-weight: 700;
       color: var(--primary-color);
+
       &:hover {
         i {
           animation: 0.3s toLeftFromRight;
@@ -1537,21 +1829,25 @@
       }
     }
   }
+
   &:hover {
     .overlay-bg {
       left: -10%;
       opacity: 1;
     }
+
     .feature-image {
       img {
         transform: scale(1.1);
       }
     }
   }
+
   @include portrait-phone {
     .overlay-bg {
       display: none;
     }
+
     .card-content-wrapper {
       position: relative;
       left: auto;

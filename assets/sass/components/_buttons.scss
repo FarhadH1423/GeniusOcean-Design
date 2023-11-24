@@ -170,6 +170,7 @@
 
   &:hover {
     color: $primary-color;
+
     &::before {
       top: -8px;
     }
@@ -399,6 +400,7 @@
 
 .contact-btn {
   max-width: 200px;
+
   @include large-screen {
     padding: 10px 30px;
   }
@@ -415,9 +417,11 @@
   border-radius: 30px;
   overflow: hidden;
   transition: $transition-base;
+
   @include large-screen {
     padding: 14px 50px;
   }
+
   @include screen-460 {
     padding: 14px 29px;
     font-size: 14px;
@@ -439,6 +443,7 @@
     z-index: -1;
     border-radius: 50%;
     transition: $transition-base;
+
     @include screen-460 {
       left: -50px;
     }
@@ -446,6 +451,7 @@
 
   &:hover {
     color: $primary-color;
+
     &::before {
       top: -8px;
     }
@@ -463,9 +469,11 @@
   transition: $transition-base;
   background-color: $bg-choose-us;
   color: $text-color;
+
   &.active {
     background-color: $primary-color;
     color: $text-color;
+
     &::before {
       content: "";
       position: absolute;
@@ -478,14 +486,17 @@
       border-radius: 50%;
       transition: $transition-base;
     }
+
     &:hover {
       background-color: transparent;
       color: $text-shade-300;
+
       &::before {
         top: -10px;
       }
     }
   }
+
   @include screen-768 {
     padding: 8px 10px;
   }

@@ -1,28 +1,32 @@
 //ticker animation
 @keyframes ticker {
-    0% {
-      transform: translate3d(0, 0, 0);
-      visibility: visible;
-    }
-  
-    100% {
-      transform: translate3d(-100%, 0, 0);
-    }
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 
 @keyframes ups-down {
   0% {
     transform: translateY(0);
   }
+
   25% {
     transform: translateY(-30px);
   }
+
   50% {
     transform: translateY(0);
   }
+
   75% {
     transform: translateY(30px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -33,10 +37,12 @@
     transform: translateY(30px);
     opacity: 0;
   }
+
   50% {
     transform: translateY(30px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -48,6 +54,7 @@
     opacity: 0;
     transform: translate3d(0, -50px, 0);
   }
+
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -58,49 +65,57 @@
   0% {
     transform: translate(-50%, -50%) scale(0.8);
   }
+
   100% {
     transform: translate(-50%, -50%) scale(1);
   }
 }
 
 @keyframes toTopFromBottom {
-	49% {
-		transform: translateY(-100%);
-	}
-	50% {
-		opacity: 0;
-		transform: translateY(100%);
-	}
-	51% {
-		opacity: 1;
-	}
+  49% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
 }
+
 @keyframes toLeftFromRight {
-	49% {
-		transform: translateX(-100%);
-	}
-	50% {
-		opacity: 0;
-		transform: translateX(100%);
-	}
-	51% {
-		opacity: 1;
-	}
+  49% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
 }
 
 @keyframes shine {
-	100% {
-		left: 125%;
-	}
+  100% {
+    left: 125%;
+  }
 }
 
 @keyframes flipimage {
   0% {
     transform: scale(1) rotateY(0deg);
   }
+
   50% {
     transform: scale(0.8) rotateY(90deg)
   }
+
   100% {
     transform: scale(1) rotateY(0);
   }
@@ -110,6 +125,7 @@
   0% {
     width: 0;
   }
+
   100% {
     width: 100%;
   }
@@ -117,49 +133,83 @@
 
 @keyframes btn-animation {
   from {
-   mask-position: 0 0;
+    mask-position: 0 0;
   }
- 
+
   to {
-   mask-position: 100% 0;
+    mask-position: 100% 0;
   }
 }
 
- 
+
 @keyframes btn-animation2 {
   from {
-      mask-position: 100% 0;
+    mask-position: 100% 0;
   }
- 
+
   to {
-      mask-position: 0 0;
+    mask-position: 0 0;
   }
 }
- 
+
 @keyframes ripple-animation {
   0% {
-    box-shadow: 0 0 0 0 var(--primary-light); 
+    box-shadow: 0 0 0 0 var(--primary-light);
   }
+
   50% {
-    box-shadow: 0 0 0 20px rgba(1, 93, 199, 0); 
+    box-shadow: 0 0 0 20px rgba(1, 93, 199, 0);
   }
+
   100% {
-    box-shadow: 0 0 0 0 rgba(1, 93, 199, 0); 
-  } 
+    box-shadow: 0 0 0 0 rgba(1, 93, 199, 0);
+  }
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 @keyframes scale_fadeInUp {
@@ -176,12 +226,13 @@
 
 @keyframes worm {
   from {
-      stroke-dasharray: 22 307.86 22;
-      transform: rotate(0);
+    stroke-dasharray: 22 307.86 22;
+    transform: rotate(0);
   }
+
   to {
-      stroke-dasharray: 2 347.86 2;
-      transform: rotate(4turn);
+    stroke-dasharray: 2 347.86 2;
+    transform: rotate(4turn);
   }
 }
 
@@ -189,6 +240,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

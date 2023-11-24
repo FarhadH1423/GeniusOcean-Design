@@ -1,9 +1,11 @@
 .team-card {
     .feature-image {
         position: relative;
+
         img {
             transition: var(--transition-base);
         }
+
         &::before {
             content: '';
             position: absolute;
@@ -17,6 +19,7 @@
             transform: skewX(-25deg);
         }
     }
+
     .team-card-content {
         max-width: 300px;
         background-color: var(--white-color);
@@ -28,6 +31,7 @@
         margin-top: -116px;
         position: relative;
         z-index: 1;
+
         .spacer {
             width: 100%;
             height: 1px;
@@ -35,6 +39,7 @@
             display: block;
             margin: 25px 0 30px;
         }
+
         .social-info {
             a {
                 width: 40px;
@@ -45,9 +50,11 @@
                 background-color: var(--light-bg-2);
                 border-radius: 50%;
                 color: var(--headings-color);
+
                 &:hover {
                     color: var(--white-color);
                     background-color: var(--primary-color);
+
                     i {
                         animation: 0.3s toLeftFromRight;
                     }
@@ -55,11 +62,13 @@
             }
         }
     }
+
     &:hover {
         .feature-image {
             img {
                 transform: scale(1.1);
             }
+
             &::before {
                 animation: 0.75s shine;
             }
@@ -72,8 +81,10 @@
 .team-d-info {
     padding: 40px;
 }
+
 .td-icon-box {
     gap: 20px;
+
     .icon-wrapper {
         width: 50px;
         height: 50px;
@@ -86,21 +97,25 @@
         background-color: var(--light-bg-2);
         padding: 40px;
         border-radius: 15px;
+
         .icon-box {
             display: flex;
             align-items: center;
             gap: 20px;
+
             .icon-wrapper {
                 width: 50px;
                 height: 50px;
                 background-color: var(--white-color);
                 color: var(--primary-color);
             }
-            + .icon-box {
+
+            +.icon-box {
                 margin-top: 44px;
-                position: relative; 
+                position: relative;
+
                 &::before {
-                    content: ''; 
+                    content: '';
                     position: absolute;
                     left: 0;
                     top: -22px;
@@ -111,5 +126,5 @@
                 }
             }
         }
-    } 
+    }
 }
