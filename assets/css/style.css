@@ -2555,7 +2555,7 @@ p {
         padding: 50px 30px; } }
 
 .gateways-section {
-  padding-top: 100px;
+  padding-top: 130px;
   padding-bottom: 50px;
   background-color: #04032e;
   background-size: 100% auto; }
@@ -2565,7 +2565,7 @@ p {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
-    padding-bottom: 10px; }
+    padding-bottom: 60px; }
     .gateways-section .gateways-section-header h6 {
       color: #ffffff;
       font-size: 20;
@@ -2589,6 +2589,15 @@ p {
     background-color: #38117f;
     padding: 45px;
     border-radius: 8px; }
+    @media (max-width: 1290px) {
+      .gateways-section .gateways-box {
+        padding: 30px; } }
+    @media (max-width: 1199.98px) {
+      .gateways-section .gateways-box {
+        padding: 20px; } }
+    @media (max-width: 991.98px) {
+      .gateways-section .gateways-box {
+        margin-bottom: 20px; } }
 
 /************* about section start ************/
 .ab-award-box {

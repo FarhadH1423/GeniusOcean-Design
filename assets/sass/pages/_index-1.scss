@@ -1120,7 +1120,7 @@
 
 
 .gateways-section {
-  padding-top: 100px;
+  padding-top: 130px;
   padding-bottom: 50px;
   background-color: $bg-calcultor-section;
   background-size: 100% auto;
@@ -1130,7 +1130,7 @@
     color: $text-color;
     justify-content: center;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 60px;
 
     h6 {
       color: $text-color;
@@ -1166,8 +1166,20 @@
     background-color: $bg-counter-box;
     padding: 45px;
     border-radius: 8px;
+
     // max-width: 170px;
     // margin-right: 24px;
+    @include screen-1290 {
+      padding: 30px;
+    }
+
+    @include large-screen {
+      padding: 20px;
+    }
+
+    @include screen-992 {
+      margin-bottom: 20px;
+    }
   }
 }
 
