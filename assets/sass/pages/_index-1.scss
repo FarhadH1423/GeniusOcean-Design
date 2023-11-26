@@ -153,6 +153,7 @@
   .counter-row {
     padding-left: 72px;
     padding-right: 72px;
+
     @include portrait-phone {
       padding-left: 10px;
       padding-right: 10px;
@@ -342,6 +343,7 @@
   .about-us-row {
     padding-left: 72px;
     padding-right: 72px;
+
     @include portrait-phone {
       padding-left: 10px;
       padding-right: 10px;
@@ -777,6 +779,7 @@
   .choose-us-row {
     padding-left: 72px;
     padding-right: 72px;
+
     @include portrait-phone {
       padding-left: 10px;
       padding-right: 10px;
@@ -916,6 +919,7 @@
   .offer-row-box {
     padding-left: 72px;
     padding-right: 72px;
+
     @include portrait-phone {
       padding-left: 10px;
       padding-right: 10px;
@@ -1027,7 +1031,7 @@
         opacity: 1.25;
       }
 
-      ul > li {
+      ul>li {
         color: $text-color;
         font-size: 22px;
         font-weight: 500;
@@ -1220,10 +1224,12 @@
   padding-bottom: 50px;
   background-color: $bg-calcultor-section;
   background-size: 100% auto;
+
   // position: relative;
   .feedback-sliderr {
     .slick-list {
       padding: 80px 0;
+
       @include large-screen {
         padding: 100px 0;
       }
@@ -1267,6 +1273,7 @@
   .testimonial-row {
     padding-left: 72px;
     padding-right: 72px;
+
     @include portrait-phone {
       padding-left: 10px;
       padding-right: 10px;
@@ -1415,6 +1422,7 @@
         align-items: center;
         z-index: 1;
       }
+
       .right-quotes {
         position: absolute;
         bottom: 16px;
@@ -1430,6 +1438,7 @@
     }
   }
 }
+
 // Blog Section
 
 .blog-section {
@@ -1476,10 +1485,12 @@
   .blog-section-row {
     padding-left: 72px;
     padding-right: 72px;
+
     @include portrait-phone {
       padding-left: 10px;
       padding-right: 10px;
     }
+
     .blog-box {
       padding: 50px 2px;
 
@@ -1487,6 +1498,7 @@
       text-align: center;
       transition: $transition-base;
       position: relative;
+
       .icon-wraper {
         position: absolute;
         top: 4px;
@@ -1498,66 +1510,89 @@
 
         .icon-box {
           background-color: $primary-color;
-          width: 70px;
-          height: 70px;
+          width: 74px;
+          height: 74px;
           border-radius: 12px;
           display: flex;
           justify-content: center;
           align-items: center;
           position: absolute;
-          top: 50%;
-          left: 50%;
+          top: 50px;
+          left: 65px;
           transform: translate(-50%, -50%);
           z-index: 11;
         }
-        @include screen-1290 {
+
+        .overlay-box {
+          position: absolute;
           top: 5px;
-          left: 51px;
-          .icon-box {
-            width: 62px;
-            height: 62px;
-            h5 {
-              font-size: 20px;
-            }
-          }
+          left: 20px;
+          z-index: 0;
+          background-color: $bg-calcultor-section;
+          width: 90px;
+          height: 90px;
+          border-radius: 12px;
         }
-        @include large-screen {
-          top: 5px;
-          left: 51px;
-          .icon-box {
-            width: 57px;
-            height: 57px;
-            h5 {
-              font-size: 18px;
-            }
-          }
-        }
+
       }
+
       .blog-content {
-        border-radius: 0px 0px 16px 16px;
+
+
         img {
           width: 100%;
+          border-radius: 16px 16px 0px 0px;
+
         }
+
         .blog-short-details {
           text-align: start;
           background-color: $bg-counter-box;
           padding: 24px;
           border-radius: 0px 0px 16px 16px;
+
           h5 {
             color: $text-color;
           }
+
           p {
             font-size: 18px;
             color: $text-color;
+
             .read-more {
               color: $primary-color;
             }
           }
+
+          @include screen-1260 {
+            h5 {
+              font-size: 22px;
+            }
+
+            p {
+              font-size: 16px;
+            }
+          }
+
+          @include portrait-phone {
+            h5 {
+              font-size: 20px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
         }
       }
+
     }
+
+
   }
 }
+
+
 
 /************* about section start ************/
 .ab-award-box {
@@ -1746,6 +1781,7 @@
 }
 
 .cr-pf-slider {
+
   .prev-arrow,
   .next-arrow {
     width: 60px;
@@ -1891,6 +1927,7 @@
 
 /********************* feedback section start **********************/
 .feedback-section {
+
   .circle-shape-1,
   .circle-shape-2 {
     width: 600px;
@@ -1911,6 +1948,7 @@
 }
 
 .feedback-slider {
+
   .prev-arrow,
   .next-arrow {
     position: absolute;
@@ -1941,6 +1979,7 @@
   }
 
   @include screen-768 {
+
     .prev-arrow,
     .next-arrow {
       display: none;
@@ -1961,7 +2000,7 @@
   @include screen-992 {
     padding: 60px;
 
-    & > img {
+    &>img {
       display: none;
     }
   }
@@ -2013,7 +2052,7 @@
       li {
         font-weight: 500;
 
-        + li {
+        +li {
           margin-top: 10px;
         }
       }
@@ -2046,6 +2085,7 @@
 
 /************************************* contact section start ********************************/
 .contact-section {
+
   .circle-shape,
   .circle-shape-2 {
     background-color: #272727;
@@ -2107,7 +2147,7 @@
       }
     }
 
-    + li {
+    +li {
       margin-top: 40px;
     }
 
@@ -2175,7 +2215,7 @@
 
     .blog-meta {
       span {
-        + span {
+        +span {
           position: relative;
 
           &::before {
