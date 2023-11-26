@@ -150,6 +150,15 @@
   padding: 140px 0;
   background-color: $secondary-color;
 
+  .counter-row {
+    padding-left: 72px;
+    padding-right: 72px;
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
   .counter-box {
     padding: 50px 30px;
     background-color: $bg-counter-box;
@@ -328,6 +337,15 @@
     right: 0;
     bottom: 0;
     // max-width: 946px;
+  }
+
+  .about-us-row {
+    padding-left: 72px;
+    padding-right: 72px;
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   h6 {
@@ -756,6 +774,15 @@
     }
   }
 
+  .choose-us-row {
+    padding-left: 72px;
+    padding-right: 72px;
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
   .choose-us-box {
     padding: 50px 30px;
     background-color: $bg-counter-box;
@@ -886,6 +913,15 @@
     }
   }
 
+  .offer-row-box {
+    padding-left: 72px;
+    padding-right: 72px;
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
   .offer-box {
     padding: 50px 30px;
     border-radius: 15px;
@@ -991,7 +1027,7 @@
         opacity: 1.25;
       }
 
-      ul>li {
+      ul > li {
         color: $text-color;
         font-size: 22px;
         font-weight: 500;
@@ -1057,7 +1093,6 @@
         font-size: 14px;
       }
     }
-
   }
 
   .stat-table {
@@ -1109,15 +1144,12 @@
     }
 
     @include portrait-phone {
-      padding: 50px 30px;
+      padding: 50px 20px;
     }
   }
 }
 
-
-
 // Gateways Sections
-
 
 .gateways-section {
   padding-top: 130px;
@@ -1158,9 +1190,7 @@
         font-size: 14px;
       }
     }
-
   }
-
 
   .gateways-box {
     background-color: $bg-counter-box;
@@ -1179,6 +1209,224 @@
 
     @include screen-992 {
       margin-bottom: 20px;
+    }
+  }
+}
+
+// Testimonial Section
+
+.testimonial-section {
+  padding-top: 130px;
+  padding-bottom: 50px;
+  background-color: $bg-calcultor-section;
+  background-size: 100% auto;
+  // position: relative;
+  .feedback-sliderr {
+    .slick-list {
+      padding: 80px 0;
+      @include large-screen {
+        padding: 100px 0;
+      }
+    }
+  }
+
+  .testimonial-section-header {
+    color: $text-color;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 65px;
+
+    h6 {
+      color: $text-color;
+      font-size: 20;
+      position: relative;
+      display: inline-block;
+
+      &::before {
+        content: "";
+        position: absolute;
+
+        top: 12px;
+        right: 105%;
+        width: 73px;
+        height: 1px;
+        background-color: $primary-color;
+      }
+    }
+
+    p {
+      max-width: 558px;
+      margin: 0 auto;
+
+      @include portrait-phone {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .testimonial-row {
+    padding-left: 72px;
+    padding-right: 72px;
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .testimonial-box {
+    padding: 50px 24px;
+    background-color: $bg-counter-box;
+    border-radius: 15px;
+    text-align: start;
+
+    transition: $transition-base;
+    position: relative;
+
+    &:hover {
+      box-shadow: var(--box-shadow);
+    }
+
+    h5 {
+      padding-top: 50px;
+      color: $text-color;
+    }
+
+    p {
+      font-size: 16px;
+      color: $text-color;
+      font-weight: 400;
+    }
+
+    .icon-wraper {
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+
+      .icon-box {
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 11;
+      }
+
+      .overlay-box {
+        position: absolute;
+        top: -15px;
+        left: -10px;
+        z-index: 0;
+        background-color: $secondary-color;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+    }
+
+    @include large-screen {
+      h5 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @include screen-992 {
+      margin-bottom: 100px;
+
+      h5 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @include screen-768 {
+      margin-bottom: 100px;
+
+      h5 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @include portrait-phone {
+      margin-bottom: 100px;
+
+      h5 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @include screen-460 {
+      margin-bottom: 140px;
+
+      h5 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    @include screen-400 {
+      margin-bottom: 120px;
+
+      h5 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .counter-content {
+      .left-quotes {
+        position: absolute;
+        top: 40;
+        left: 16;
+        width: 44px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+      .right-quotes {
+        position: absolute;
+        bottom: 16px;
+        right: 24px;
+        width: 44px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
     }
   }
 }
@@ -1370,7 +1618,6 @@
 }
 
 .cr-pf-slider {
-
   .prev-arrow,
   .next-arrow {
     width: 60px;
@@ -1516,7 +1763,6 @@
 
 /********************* feedback section start **********************/
 .feedback-section {
-
   .circle-shape-1,
   .circle-shape-2 {
     width: 600px;
@@ -1537,7 +1783,6 @@
 }
 
 .feedback-slider {
-
   .prev-arrow,
   .next-arrow {
     position: absolute;
@@ -1568,7 +1813,6 @@
   }
 
   @include screen-768 {
-
     .prev-arrow,
     .next-arrow {
       display: none;
@@ -1589,7 +1833,7 @@
   @include screen-992 {
     padding: 60px;
 
-    &>img {
+    & > img {
       display: none;
     }
   }
@@ -1641,7 +1885,7 @@
       li {
         font-weight: 500;
 
-        +li {
+        + li {
           margin-top: 10px;
         }
       }
@@ -1674,7 +1918,6 @@
 
 /************************************* contact section start ********************************/
 .contact-section {
-
   .circle-shape,
   .circle-shape-2 {
     background-color: #272727;
@@ -1736,7 +1979,7 @@
       }
     }
 
-    +li {
+    + li {
       margin-top: 40px;
     }
 
@@ -1804,7 +2047,7 @@
 
     .blog-meta {
       span {
-        +span {
+        + span {
           position: relative;
 
           &::before {
