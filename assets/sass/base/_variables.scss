@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Saira:wght@500&display=swap");
+
 $primary-color: #e3106e;
 $primary-shade-800: #fd3392;
 $primary-shade-700: #fd66ad;
@@ -49,5 +51,6 @@ $box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
 
 $template-font: "IBM Plex Sans", sans-serif;
 $heading-font: "IBM Plex Sans", sans-serif;
+$date-font: "Saira", sans-serif;
 
 $transition-base: all 0.3s;
