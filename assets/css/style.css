@@ -2803,6 +2803,85 @@ p {
       align-items: center;
       z-index: 1; }
 
+.blog-section {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #04032e;
+  background-size: 100% auto; }
+  .blog-section .blog-section-header {
+    color: #ffffff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 65px; }
+    .blog-section .blog-section-header h6 {
+      color: #ffffff;
+      font-size: 20;
+      position: relative;
+      display: inline-block; }
+      .blog-section .blog-section-header h6::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 105%;
+        width: 73px;
+        height: 1px;
+        background-color: #e3106e; }
+    .blog-section .blog-section-header p {
+      max-width: 558px;
+      margin: 0 auto; }
+      @media (max-width: 575.98px) {
+        .blog-section .blog-section-header p {
+          font-size: 14px; } }
+  .blog-section .blog-box {
+    padding: 50px 30px;
+    border-radius: 15px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative; }
+    .blog-section .blog-box h3 {
+      font-size: 64px;
+      margin-bottom: 10px;
+      color: #ffffff; }
+    .blog-section .blog-box p {
+      font-size: 32px;
+      color: #ffffff; }
+    .blog-section .blog-box .icon-wraper {
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px; }
+      .blog-section .blog-box .icon-wraper .icon-box {
+        background-color: white;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 11; }
+    .blog-section .blog-box .blog-content {
+      background-color: #38117f; }
+
 /************* about section start ************/
 .ab-award-box {
   left: 40px;
