@@ -7,63 +7,65 @@
   background-size: cover;
   background-position: center center;
 
-  .breadcrumb-content {
-    color: $text-color;
-
-    @include screen-768 {
-      width: initial;
-    }
+  .breadcrumb-rows {
+    padding-left: 72px;
+    padding-right: 72px;
   }
 
-  @include screen-1900 {
-    background-position: center bottom;
-    background-size: cover;
+  .breadcrumb-content {
+    color: $text-color;
   }
 
   @include large-screen {
-    background-size: cover;
+    height: 580px;
+    .breadcrumb-content {
+      h1 {
+        font-size: 50px;
+      }
+      h4 {
+        font-size: 28px;
+      }
+    }
   }
-
+  @include screen-992 {
+    height: 500px;
+    .breadcrumb-content {
+      h1 {
+        font-size: 40px;
+      }
+      h4 {
+        font-size: 24px;
+      }
+    }
+  }
   @include screen-768 {
-    height: 700px;
-    margin-top: -100px;
-
+    height: 450px;
+    .breadcrumb-rows {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
     .breadcrumb-content {
-      padding-top: 200px;
+      h1 {
+        font-size: 32px;
+      }
+      h4 {
+        font-size: 20px;
+      }
     }
   }
-
   @include portrait-phone {
+    height: 420px;
+    .breadcrumb-rows {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
     .breadcrumb-content {
-      margin-left: 20px;
-    }
-
-    .breadcrumb-header {
-      font-size: 36px;
-      width: 350px;
-    }
-  }
-
-  @include screen-460 {
-    .breadcrumb-content {
-      margin-left: 10px;
-    }
-
-    .breadcrumb-header {
-      font-size: 30px;
-      width: 300px;
-    }
-  }
-
-  @include screen-400 {
-    .breadcrumb-content {
-      margin-left: 0px;
-      padding-left: 0px;
-    }
-
-    .breadcrumb-header {
-      font-size: 25px;
-      width: 220px;
+      h1 {
+        font-size: 24px;
+      }
+      h4 {
+        font-size: 16px;
+      }
     }
   }
 }
