@@ -28,8 +28,21 @@
   }
 }
 
+@mixin screen-900 {
+  @media (max-width: 899.98px) {
+    @content;
+  }
+}
+
+
 @mixin screen-992 {
   @media (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin screen-1060 {
+  @media (max-width: 1059.98px) {
     @content;
   }
 }
