@@ -1,0 +1,119 @@
+.investor-section {
+    padding-top: 130px;
+    padding-bottom: 140px;
+    background-color: $bg-calcultor-section;
+    background-size: 100% auto;
+
+    .investor-section-header {
+        color: $text-color;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 65px;
+
+        h6 {
+            color: $text-color;
+            font-size: 20;
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: "";
+                position: absolute;
+
+                top: 12px;
+                right: 105%;
+                width: 73px;
+                height: 1px;
+                background-color: $primary-color;
+            }
+        }
+
+        p {
+            max-width: 558px;
+            margin: 0 auto;
+
+            @include portrait-phone {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .investor-rows {
+        padding-left: 72px;
+        padding-right: 72px;
+        padding-top: 130px;
+
+        .counter-box {
+            padding: 27px 30px;
+            background-color: $bg-counter-box;
+            border-radius: 15px;
+            text-align: center;
+            transition: $transition-base;
+            position: relative;
+
+            &:hover {
+                box-shadow: $box-shadow;
+            }
+
+            h3 {
+                font-size: 64px;
+                margin-bottom: 10px;
+                color: $text-color;
+            }
+
+            p {
+                font-size: 32px;
+                color: $text-color;
+            }
+
+            .icon-wraper {
+                position: absolute;
+                top: -20%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 100px;
+
+                .icon-box {
+                    background-color: white;
+                    width: 213px;
+                    height: 213px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 15%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 11;
+                }
+
+                .overlay-box {
+                    position: absolute;
+                    top: -101px;
+                    left: -66px;
+                    z-index: 0;
+                    background-color: $secondary-color;
+                    width: 233px;
+                    height: 233px;
+                    border-radius: 50%;
+                }
+            }
+
+            .counter-content {
+                padding-top: 85px;
+                color: $text-color;
+
+                h5 {
+                    font-weight: 500;
+                }
+
+                h6 {
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+}

@@ -1035,7 +1035,7 @@ p {
     -webkit-box-shadow: 0px 30px 30px -20px rgba(141, 114, 114, 0.42);
     box-shadow: 0px 30px 30px -20px rgba(141, 114, 114, 0.42); }
   .header-sticky.sticky-on .crete-navmenu a {
-    padding: 40px 30px; }
+    padding: 40px 26px; }
 
 /******************** preloader ******************/
 .preloader {
@@ -2816,7 +2816,10 @@ p {
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-          z-index: 11; }
+          z-index: 11;
+          color: #ffffff; }
+          .blog-section .blog-section-row .blog-box .icon-wraper .icon-box h5 {
+            font-weight: 500; }
         .blog-section .blog-section-row .blog-box .icon-wraper .overlay-box {
           position: absolute;
           top: 5px;
@@ -4800,6 +4803,107 @@ form.newsletter-form .template-btn {
     background-color: var(--light-bg);
     margin-top: 0;
     padding-top: 24px; }
+
+.investor-section {
+  padding-top: 130px;
+  padding-bottom: 140px;
+  background-color: #04032e;
+  background-size: 100% auto; }
+  .investor-section .investor-section-header {
+    color: #ffffff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 65px; }
+    .investor-section .investor-section-header h6 {
+      color: #ffffff;
+      font-size: 20;
+      position: relative;
+      display: inline-block; }
+      .investor-section .investor-section-header h6::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 105%;
+        width: 73px;
+        height: 1px;
+        background-color: #e3106e; }
+    .investor-section .investor-section-header p {
+      max-width: 558px;
+      margin: 0 auto; }
+      @media (max-width: 575.98px) {
+        .investor-section .investor-section-header p {
+          font-size: 14px; } }
+  .investor-section .investor-rows {
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 130px; }
+    .investor-section .investor-rows .counter-box {
+      padding: 27px 30px;
+      background-color: #38117f;
+      border-radius: 15px;
+      text-align: center;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      position: relative; }
+      .investor-section .investor-rows .counter-box:hover {
+        -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
+      .investor-section .investor-rows .counter-box h3 {
+        font-size: 64px;
+        margin-bottom: 10px;
+        color: #ffffff; }
+      .investor-section .investor-rows .counter-box p {
+        font-size: 32px;
+        color: #ffffff; }
+      .investor-section .investor-rows .counter-box .icon-wraper {
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px; }
+        .investor-section .investor-rows .counter-box .icon-wraper .icon-box {
+          background-color: white;
+          width: 213px;
+          height: 213px;
+          border-radius: 50%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          position: absolute;
+          top: 15%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          z-index: 11; }
+        .investor-section .investor-rows .counter-box .icon-wraper .overlay-box {
+          position: absolute;
+          top: -101px;
+          left: -66px;
+          z-index: 0;
+          background-color: #04032e;
+          width: 233px;
+          height: 233px;
+          border-radius: 50%; }
+      .investor-section .investor-rows .counter-box .counter-content {
+        padding-top: 85px;
+        color: #ffffff; }
+        .investor-section .investor-rows .counter-box .counter-content h5 {
+          font-weight: 500; }
+        .investor-section .investor-rows .counter-box .counter-content h6 {
+          font-weight: 500; }
 
 .canvus-menu {
   position: fixed;
