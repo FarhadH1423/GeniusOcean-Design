@@ -4904,6 +4904,21 @@ form.newsletter-form .template-btn {
           font-weight: 500; }
         .investor-section .investor-rows .counter-box .counter-content h6 {
           font-weight: 500; }
+      @media (max-width: 1199.98px) {
+        .investor-section .investor-rows .counter-box .icon-box {
+          width: 213px;
+          height: 213px;
+          top: 15%;
+          left: 50%; }
+        .investor-section .investor-rows .counter-box .overlay-box {
+          top: -101px;
+          left: -66px;
+          width: 233px;
+          height: 233px; }
+        .investor-section .investor-rows .counter-box .counter-content h5 {
+          font-size: 20px; }
+        .investor-section .investor-rows .counter-box .counter-content h6 {
+          font-size: 16px; } }
 
 .canvus-menu {
   position: fixed;

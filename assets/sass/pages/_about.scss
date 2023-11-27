@@ -114,6 +114,38 @@
                 }
             }
 
+            @include large-screen {
+                .icon-box {
+
+                    width: 213px;
+                    height: 213px;
+
+                    top: 15%;
+                    left: 50%;
+
+                }
+
+                .overlay-box {
+
+                    top: -101px;
+                    left: -66px;
+
+                    width: 233px;
+                    height: 233px;
+
+                }
+
+                .counter-content {
+                    h5 {
+                        font-size: 20px;
+                    }
+
+                    h6 {
+                        font-size: 16px;
+                    }
+                }
+            }
+
         }
     }
 }
