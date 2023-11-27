@@ -83,7 +83,8 @@ h3 {
 .h4,
 h4 {
   font-size: 32px;
-  line-height: 1.3; }
+  line-height: 1.3;
+  font-weight: 600; }
   @media (max-width: 767.98px) {
     .h4,
     h4 {
@@ -881,6 +882,52 @@ p {
     transform: rotate(360deg); } }
 
 /******************************** components ******************************/
+.breadcrumb-section {
+  height: 640px;
+  width: 100%;
+  margin-top: -200px;
+  padding-top: 255px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .breadcrumb-section .breadcrumb-content {
+    color: #ffffff; }
+    @media (max-width: 767.98px) {
+      .breadcrumb-section .breadcrumb-content {
+        width: initial; } }
+  @media (max-width: 1900px) {
+    .breadcrumb-section {
+      background-position: center bottom;
+      background-size: cover; } }
+  @media (max-width: 1199.98px) {
+    .breadcrumb-section {
+      background-size: cover; } }
+  @media (max-width: 767.98px) {
+    .breadcrumb-section {
+      height: 700px;
+      margin-top: -100px; }
+      .breadcrumb-section .breadcrumb-content {
+        padding-top: 200px; } }
+  @media (max-width: 575.98px) {
+    .breadcrumb-section .breadcrumb-content {
+      margin-left: 20px; }
+    .breadcrumb-section .breadcrumb-header {
+      font-size: 36px;
+      width: 350px; } }
+  @media (max-width: 460px) {
+    .breadcrumb-section .breadcrumb-content {
+      margin-left: 10px; }
+    .breadcrumb-section .breadcrumb-header {
+      font-size: 30px;
+      width: 300px; } }
+  @media (max-width: 400px) {
+    .breadcrumb-section .breadcrumb-content {
+      margin-left: 0px;
+      padding-left: 0px; }
+    .breadcrumb-section .breadcrumb-header {
+      font-size: 25px;
+      width: 220px; } }
+
 /*********************** header section ********************/
 .header-section {
   position: relative;
@@ -982,7 +1029,9 @@ p {
     display: none !important; }
   .header-sticky.sticky-on .crete-navbar {
     -webkit-box-shadow: none;
-    box-shadow: none; }
+    box-shadow: none;
+    -webkit-box-shadow: 0px 30px 30px -20px rgba(141, 114, 114, 0.42);
+    box-shadow: 0px 30px 30px -20px rgba(141, 114, 114, 0.42); }
   .header-sticky.sticky-on .crete-navmenu a {
     padding: 40px 30px; }
 
@@ -3935,70 +3984,6 @@ p {
   .cr2-footer-brands span {
     letter-spacing: 5px; }
 
-/************************************** breadcrumb section start ******************************************/
-.breadcrumb-section {
-  padding: 390px 0 190px;
-  margin-top: -200px;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .breadcrumb-section::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: -1; }
-  .breadcrumb-section .circle-shape-1 {
-    width: 600px;
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.4);
-    left: -160px;
-    top: -340px; }
-  .breadcrumb-section .circle-shape-2 {
-    width: 500px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.2);
-    top: 60px;
-    left: -312px; }
-  .breadcrumb-section .circle-shape-3 {
-    width: 1030px;
-    height: 1030px;
-    background-color: #5044EB;
-    mix-blend-mode: multiply;
-    right: -400px;
-    top: -400px; }
-
-.breadcrumb-content h1 {
-  position: relative;
-  z-index: 2; }
-
-.breadcrumb-content ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 20px; }
-  .breadcrumb-content ul li {
-    color: var(--white-color);
-    position: relative; }
-    .breadcrumb-content ul li + li::before {
-      content: '/';
-      position: absolute;
-      left: -12px;
-      color: rgba(255, 255, 255, 0.6);
-      top: 1px; }
-    .breadcrumb-content ul li a {
-      color: rgba(255, 255, 255, 0.6);
-      opacity: 1; }
-
-@media (max-width: 575.98px) {
-  .breadcrumb-content h1 {
-    font-size: 42px; } }
-
 .bp-blog-card {
   background-color: var(--light-bg-2); }
   .bp-blog-card .bp-feature-image-slider {
@@ -4249,7 +4234,7 @@ blockquote {
     blockquote .quote-content h6 {
       padding-left: 40px; }
       blockquote .quote-content h6::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: 6px;
@@ -4308,7 +4293,7 @@ blockquote {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     color: var(--headings-color);
     border-radius: 50%; }
     .bdp-author-box a:hover {
@@ -4800,81 +4785,6 @@ form.newsletter-form .template-btn {
     background-color: var(--light-bg);
     margin-top: 0;
     padding-top: 24px; }
-
-/************************* about section start ************************/
-.ab-years-box {
-  padding: 40px;
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-shadow: var(--primary-shadow);
-  box-shadow: var(--primary-shadow);
-  border-radius: 15px;
-  gap: 10px;
-  left: 0;
-  top: 80px; }
-  .ab-years-box h3 {
-    color: var(--white-color); }
-  .ab-years-box p {
-    font-weight: 700;
-    text-transform: uppercase; }
-
-.crb-brand-area {
-  padding: 100px; }
-  @media (max-width: 575.98px) {
-    .crb-brand-area {
-      padding: 40px; } }
-
-.crb-brand-slider .single-item {
-  border: 1px solid var(--border-color);
-  text-align: center;
-  padding: 32px 40px;
-  border-radius: 15px; }
-  .crb-brand-slider .single-item img {
-    display: inline-block; }
-
-.crb-brand-slider .prev-btn,
-.crb-brand-slider .next-btn {
-  position: absolute;
-  right: 0;
-  top: -120px;
-  width: 60px;
-  height: 60px;
-  background-color: var(--primary-light);
-  color: var(--primary-color);
-  border-radius: 50%;
-  -webkit-transition: var(--transition-base);
-  -o-transition: var(--transition-base);
-  transition: var(--transition-base); }
-  .crb-brand-slider .prev-btn:hover,
-  .crb-brand-slider .next-btn:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color); }
-
-.crb-brand-slider .prev-btn {
-  right: 75px; }
-
-@media (max-width: 991.98px) {
-  .crb-brand-slider .prev-btn,
-  .crb-brand-slider .next-btn {
-    display: none !important; } }
-
-.dreamer-section .layer-blur {
-  width: 800px;
-  height: 800px;
-  background: -webkit-linear-gradient(225deg, #25D4F8 0%, #8A53FF 52.26%, #E64AFF 100%);
-  background: -o-linear-gradient(225deg, #25D4F8 0%, #8A53FF 52.26%, #E64AFF 100%);
-  background: linear-gradient(225deg, #25D4F8 0%, #8A53FF 52.26%, #E64AFF 100%);
-  -webkit-filter: blur(200px);
-  filter: blur(200px);
-  opacity: 0.3;
-  bottom: -400px;
-  right: -400px; }
 
 .canvus-menu {
   position: fixed;

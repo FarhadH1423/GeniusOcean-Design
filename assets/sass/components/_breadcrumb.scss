@@ -1,0 +1,69 @@
+.breadcrumb-section {
+  height: 640px;
+  width: 100%;
+  margin-top: -200px;
+  padding-top: 255px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .breadcrumb-content {
+    color: $text-color;
+
+    @include screen-768 {
+      width: initial;
+    }
+  }
+
+  @include screen-1900 {
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  @include large-screen {
+    background-size: cover;
+  }
+
+  @include screen-768 {
+    height: 700px;
+    margin-top: -100px;
+
+    .breadcrumb-content {
+      padding-top: 200px;
+    }
+  }
+
+  @include portrait-phone {
+    .breadcrumb-content {
+      margin-left: 20px;
+    }
+
+    .breadcrumb-header {
+      font-size: 36px;
+      width: 350px;
+    }
+  }
+
+  @include screen-460 {
+    .breadcrumb-content {
+      margin-left: 10px;
+    }
+
+    .breadcrumb-header {
+      font-size: 30px;
+      width: 300px;
+    }
+  }
+
+  @include screen-400 {
+    .breadcrumb-content {
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+
+    .breadcrumb-header {
+      font-size: 25px;
+      width: 220px;
+    }
+  }
+}
