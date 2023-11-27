@@ -968,7 +968,7 @@ p {
 /****************** sticky header ****************/
 .header-sticky.sticky-on {
   position: fixed !important;
-  top: 0;
+  top: -5%;
   left: 0;
   width: 100%;
   -webkit-animation: 1s fadeInDown;
@@ -983,6 +983,8 @@ p {
   .header-sticky.sticky-on .crete-navbar {
     -webkit-box-shadow: none;
     box-shadow: none; }
+  .header-sticky.sticky-on .crete-navmenu a {
+    padding: 40px 30px; }
 
 /******************** preloader ******************/
 .preloader {

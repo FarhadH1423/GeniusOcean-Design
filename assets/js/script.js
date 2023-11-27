@@ -32,6 +32,17 @@
     time: 1000,
   });
 
+  //12. header sticky
+  $(window).on("scroll", function () {
+    var scrollbarPosition = $(this).scrollTop();
+
+    if (scrollbarPosition > 150) {
+      $(".header-sticky").addClass("sticky-on");
+    } else {
+      $(".header-sticky").removeClass("sticky-on");
+    }
+  });
+
   //2. Scroll top button
   $(window).on("scroll", function () {
     var scrollBar = $(this).scrollTop();
@@ -555,17 +566,6 @@
   //11. preloader
   $(window).on("load", function () {
     $(".preloader").fadeOut();
-  });
-
-  //12. header sticky
-  $(window).on("scroll", function () {
-    var scrollbarPosition = $(this).scrollTop();
-
-    if (scrollbarPosition > 150) {
-      $(".header-sticky").addClass("sticky-on");
-    } else {
-      $(".header-sticky").removeClass("sticky-on");
-    }
   });
 
   //13. counterup
