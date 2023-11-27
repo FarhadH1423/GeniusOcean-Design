@@ -1031,7 +1031,7 @@
         opacity: 1.25;
       }
 
-      ul>li {
+      ul > li {
         color: $text-color;
         font-size: 22px;
         font-weight: 500;
@@ -1533,16 +1533,12 @@
           height: 90px;
           border-radius: 12px;
         }
-
       }
 
       .blog-content {
-
-
         img {
           width: 100%;
           border-radius: 16px 16px 0px 0px;
-
         }
 
         .blog-short-details {
@@ -1585,12 +1581,11 @@
           }
         }
       }
-
     }
-
-
   }
 }
+
+// Footer Section
 
 
 
@@ -1781,7 +1776,6 @@
 }
 
 .cr-pf-slider {
-
   .prev-arrow,
   .next-arrow {
     width: 60px;
@@ -1927,7 +1921,6 @@
 
 /********************* feedback section start **********************/
 .feedback-section {
-
   .circle-shape-1,
   .circle-shape-2 {
     width: 600px;
@@ -1948,7 +1941,6 @@
 }
 
 .feedback-slider {
-
   .prev-arrow,
   .next-arrow {
     position: absolute;
@@ -1979,7 +1971,6 @@
   }
 
   @include screen-768 {
-
     .prev-arrow,
     .next-arrow {
       display: none;
@@ -2000,7 +1991,7 @@
   @include screen-992 {
     padding: 60px;
 
-    &>img {
+    & > img {
       display: none;
     }
   }
@@ -2052,7 +2043,7 @@
       li {
         font-weight: 500;
 
-        +li {
+        + li {
           margin-top: 10px;
         }
       }
@@ -2085,7 +2076,6 @@
 
 /************************************* contact section start ********************************/
 .contact-section {
-
   .circle-shape,
   .circle-shape-2 {
     background-color: #272727;
@@ -2147,7 +2137,7 @@
       }
     }
 
-    +li {
+    + li {
       margin-top: 40px;
     }
 
@@ -2215,7 +2205,7 @@
 
     .blog-meta {
       span {
-        +span {
+        + span {
           position: relative;
 
           &::before {
