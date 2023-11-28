@@ -4058,51 +4058,159 @@ p {
       font-weight: 300;
       padding: 6px; } }
 
-.cp-contact-card {
-  border-radius: 15px;
-  overflow: hidden;
-  border: 1px solid var(--light-stroke); }
-  .cp-contact-card .ct-contact-card-content {
-    padding: 40px; }
-  @media (max-width: 991.98px) {
-    .cp-contact-card .ct-contact-card-content span {
-      font-size: 12px; }
-    .cp-contact-card .ct-contact-card-content h4 {
-      font-size: 18px; } }
-
-.contact-form-area .google-map {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: calc(50% - 24px);
-  height: 100%; }
-  .contact-form-area .google-map iframe {
-    width: 100%;
-    height: 100%; }
-
-@media (max-width: 991.98px) {
-  .contact-form-area .google-map {
-    position: initial;
-    width: 100%;
-    height: 500px;
-    margin-top: 60px; } }
-
-.ct-contact-form .input-field.width-half {
-  width: 50%; }
-
-.ct-contact-form .theme-input {
-  padding: 20px 25px;
-  border: 1px solid transparent; }
-  .ct-contact-form .theme-input:focus {
-    border-color: var(--primary-color); }
-
-.ct-contact-form .nice-select {
-  height: 60px;
-  width: 100%;
-  border-radius: 15px;
-  line-height: 60px; }
-  .ct-contact-form .nice-select .list {
-    width: 100%; }
+.contact-us-section {
+  padding: 140px 0;
+  background-color: #04032e; }
+  .contact-us-section .contact-us-section-header {
+    color: #ffffff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 110px; }
+    .contact-us-section .contact-us-section-header h6 {
+      color: #ffffff;
+      font-size: 20;
+      position: relative;
+      display: inline-block; }
+      .contact-us-section .contact-us-section-header h6::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 105%;
+        width: 73px;
+        height: 1px;
+        background-color: #e3106e; }
+    .contact-us-section .contact-us-section-header p {
+      max-width: 696px;
+      margin: 0 auto; }
+  .contact-us-section .contact-row {
+    padding-left: 72px;
+    padding-right: 72px; }
+    @media (max-width: 575.98px) {
+      .contact-us-section .contact-row {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .contact-us-section .contact-box {
+    padding: 50px 30px;
+    background-color: #38117f;
+    border-radius: 15px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative; }
+    .contact-us-section .contact-box:hover {
+      -webkit-box-shadow: var(--box-shadow);
+      box-shadow: var(--box-shadow); }
+    .contact-us-section .contact-box h4 {
+      padding-top: 40px;
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #ffffff;
+      font-weight: 500; }
+    .contact-us-section .contact-box h6 {
+      font-size: 22px;
+      color: #ffffff;
+      font-weight: 400; }
+    .contact-us-section .contact-box .icon-wraper {
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 120px;
+      height: 120px; }
+      .contact-us-section .contact-box .icon-wraper .icon-box {
+        background-color: #38117f;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 11; }
+        .contact-us-section .contact-box .icon-wraper .icon-box img {
+          width: 60px;
+          height: 60px; }
+      .contact-us-section .contact-box .icon-wraper .overlay-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        background-color: #04032e;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%; }
+    @media (max-width: 400px) {
+      .contact-us-section .contact-box {
+        margin-bottom: 80px; }
+        .contact-us-section .contact-box h3 {
+          padding-top: 10px;
+          font-size: 40px; }
+        .contact-us-section .contact-box p {
+          font-size: 20px; } }
+    @media (max-width: 460px) {
+      .contact-us-section .contact-box {
+        margin-bottom: 80px; }
+        .contact-us-section .contact-box h3 {
+          padding-top: 10px;
+          font-size: 40px; }
+        .contact-us-section .contact-box p {
+          font-size: 20px; } }
+    @media (max-width: 575.98px) {
+      .contact-us-section .contact-box {
+        margin-bottom: 80px; }
+        .contact-us-section .contact-box h3 {
+          padding-top: 10px;
+          font-size: 40px; }
+        .contact-us-section .contact-box p {
+          font-size: 20px; } }
+    @media (max-width: 1290px) {
+      .contact-us-section .contact-box {
+        margin-bottom: 20px; }
+        .contact-us-section .contact-box h4 {
+          padding-top: 30px;
+          font-size: 30px; }
+        .contact-us-section .contact-box h6 {
+          font-size: 18px; } }
+    @media (max-width: 1059.98px) {
+      .contact-us-section .contact-box {
+        margin-bottom: 20px; }
+        .contact-us-section .contact-box h4 {
+          padding-top: 30px;
+          font-size: 26px; }
+        .contact-us-section .contact-box h6 {
+          font-size: 16px; } }
+    @media (max-width: 991.98px) {
+      .contact-us-section .contact-box {
+        margin-bottom: 80px; }
+        .contact-us-section .contact-box h4 {
+          padding-top: 30px;
+          font-size: 30px; }
+        .contact-us-section .contact-box h6 {
+          font-size: 18px; } }
+    @media (max-width: 767.98px) {
+      .contact-us-section .contact-box {
+        margin-bottom: 80px; }
+        .contact-us-section .contact-box h4 {
+          padding-top: 30px;
+          font-size: 30px; }
+        .contact-us-section .contact-box h6 {
+          font-size: 18px; } }
 
 .newsletter-section {
   background-repeat: no-repeat;
