@@ -1146,6 +1146,28 @@ p {
     .primary-btn:hover::before {
       top: -10px; }
 
+.primary-btn-app-section {
+  background-color: #e3106e;
+  color: #ffffff; }
+  .primary-btn-app-section::before {
+    content: "";
+    position: absolute;
+    left: -90px;
+    top: -135%;
+    width: 190%;
+    height: 135%;
+    background-color: #000000;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .primary-btn-app-section:hover {
+    background-color: transparent;
+    color: #0d0d0d; }
+    .primary-btn-app-section:hover::before {
+      top: -10px; }
+
 .white-btn {
   background-color: #ffffff;
   color: #0d0d0d; }
@@ -1953,7 +1975,7 @@ p {
     color: #ffffff; }
   .about-us-section .about-paragraph {
     color: #ffffff;
-    font-weight: 500; }
+    font-weight: 400; }
   @media (max-width: 1399.98px) {
     .about-us-section .about-img {
       max-width: 678px; } }
@@ -4400,46 +4422,6 @@ blockquote {
   .ct-contact-form .nice-select .list {
     width: 100%; }
 
-.accordion .accordion-item + .accordion-item {
-  margin-top: 20px; }
-
-.accordion-item {
-  background-color: var(--light-bg-2);
-  border: 0;
-  padding: 40px 34px;
-  border-radius: 15px; }
-  .accordion-item .accordion-header a {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--headings-color);
-    display: block;
-    position: relative;
-    padding-right: 42px; }
-    .accordion-item .accordion-header a::after {
-      content: '\f106';
-      position: absolute;
-      right: 0;
-      top: -10px;
-      width: 50px;
-      height: 50px;
-      background-color: var(--primary-color);
-      color: var(--white-color);
-      border-radius: 10px;
-      font-family: 'FontAwesome';
-      font-size: 16px;
-      text-align: center;
-      line-height: 50px; }
-    .accordion-item .accordion-header a.collapsed::after {
-      content: '\f107'; }
-  .accordion-item .accordion-body {
-    margin-top: 32px; }
-    .accordion-item .accordion-body p {
-      color: var(--text-color); }
-  .accordion-item .feature-image {
-    width: 150px;
-    -ms-flex-negative: 0;
-    flex-shrink: 0; }
-
 .newsletter-section {
   background-repeat: no-repeat;
   background-size: cover; }
@@ -4930,6 +4912,303 @@ form.newsletter-form .template-btn {
     @media (max-width: 991.98px) {
       .investor-section .investor-rows {
         padding-top: 0; } }
+
+.faq-section {
+  background-color: #04032e;
+  position: relative;
+  padding-bottom: 70px; }
+  .faq-section h6 {
+    color: #ffffff;
+    font-size: 20;
+    position: relative;
+    padding-left: 80px; }
+    .faq-section h6::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 73px;
+      height: 1px;
+      background-color: #e3106e; }
+  .faq-section h2 {
+    color: #ffffff; }
+  .faq-section .faq-img {
+    width: 640px;
+    height: 680px;
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    margin-left: 200px; }
+  .faq-section .hyp-accordians {
+    background-color: transparent; }
+    .faq-section .hyp-accordians .accordion-item,
+    .faq-section .hyp-accordians .accordion-header,
+    .faq-section .hyp-accordians .accordion-button {
+      background-color: transparent;
+      color: #ffffff; }
+    .faq-section .hyp-accordians .accordion-item {
+      border-bottom: 1px solid #666666;
+      border-width: thin; }
+    .faq-section .hyp-accordians .accordion-button:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .faq-section .hyp-accordians .accordion-button:after {
+      width: auto;
+      height: auto;
+      content: "+";
+      font-size: 40px;
+      background-image: none;
+      font-weight: 100;
+      color: #ffffff;
+      -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+      transform: translateY(-4px); }
+    .faq-section .hyp-accordians .accordion-button:not(.collapsed)::after {
+      width: auto;
+      height: auto;
+      content: "-";
+      font-size: 48px;
+      -webkit-transform: translate(-5px, -4px);
+      -ms-transform: translate(-5px, -4px);
+      transform: translate(-5px, -4px);
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      color: #ffffff; }
+  @media (max-width: 1700px) {
+    .faq-section .faq-img {
+      width: 590px;
+      height: 645px;
+      margin-left: 130px; } }
+  @media (max-width: 1399.98px) {
+    .faq-section .faq-img {
+      width: 540px;
+      height: 590px;
+      margin-left: 100px; }
+    .faq-section .hyp-accordians {
+      padding-right: 40px; } }
+  @media (max-width: 1260px) {
+    .faq-section .faq-img {
+      width: 490px;
+      height: 560px;
+      bottom: 180px;
+      margin-left: 70px; } }
+  @media (max-width: 1059.98px) {
+    .faq-section .faq-img {
+      width: 440px;
+      height: 530px;
+      bottom: 200px;
+      margin-left: 50px; } }
+  @media (max-width: 991.98px) {
+    .faq-section .faq-img {
+      width: 420px;
+      height: 530px;
+      bottom: 220px;
+      margin-left: 24px; } }
+  @media (max-width: 819.98px) {
+    .faq-section .faq-img {
+      width: 390px;
+      height: 500px;
+      bottom: 260px;
+      margin-left: 30px; }
+    .faq-section .accordion-item {
+      font-size: 14px; } }
+  @media (max-width: 767.98px) {
+    .faq-section .faq-img {
+      position: relative;
+      width: 450px;
+      height: 505px;
+      bottom: 55px;
+      margin-left: 90px; } }
+  @media (max-width: 575.98px) {
+    .faq-section .faq-img {
+      position: relative;
+      width: 350px;
+      height: 405px;
+      bottom: 55px;
+      margin-left: 70px; } }
+  @media (max-width: 460px) {
+    .faq-section .faq-img {
+      position: relative;
+      width: 300px;
+      height: 380px;
+      bottom: 55px;
+      margin-left: 50px; } }
+  @media (max-width: 400px) {
+    .faq-section .faq-img {
+      position: relative;
+      width: 250px;
+      height: 330px;
+      bottom: 55px;
+      margin-left: 30px; } }
+
+.comission-section {
+  background-color: #04032e;
+  padding-bottom: 50px; }
+  .comission-section .comission-card {
+    background-color: #38117f;
+    border-radius: 15px;
+    padding: 80px 0px;
+    height: 420px;
+    margin-left: 72px;
+    margin-right: 72px; }
+    .comission-section .comission-card .comission-content {
+      text-align: center;
+      color: #ffffff; }
+      .comission-section .comission-card .comission-content h2 {
+        font-weight: 600; }
+      .comission-section .comission-card .comission-content p {
+        max-width: 726px;
+        margin: 0 auto;
+        text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-weight: 500; }
+      @media (max-width: 1199.98px) {
+        .comission-section .comission-card .comission-content h2 {
+          font-size: 40px; }
+        .comission-section .comission-card .comission-content p {
+          font-size: 16px;
+          max-width: 680px; } }
+      @media (max-width: 991.98px) {
+        .comission-section .comission-card .comission-content h2 {
+          font-size: 36px; }
+        .comission-section .comission-card .comission-content p {
+          font-size: 14px;
+          max-width: 550px; } }
+      @media (max-width: 767.98px) {
+        .comission-section .comission-card .comission-content h2 {
+          font-size: 32px; }
+        .comission-section .comission-card .comission-content p {
+          font-size: 14px;
+          max-width: 450px; } }
+      @media (max-width: 575.98px) {
+        .comission-section .comission-card .comission-content h2 {
+          font-size: 28px; }
+        .comission-section .comission-card .comission-content p {
+          font-size: 14px;
+          max-width: 350px; } }
+    @media (max-width: 767.98px) {
+      .comission-section .comission-card {
+        margin-left: 10px;
+        margin-right: 10px; } }
+    @media (max-width: 400px) {
+      .comission-section .comission-card {
+        padding: 40px 0px; } }
+
+.myapp-section {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background-color: #04032e;
+  position: relative;
+  overflow: hidden; }
+  .myapp-section .myapp-img {
+    position: absolute;
+    width: 650px;
+    height: 550px;
+    right: 190px;
+    bottom: 29px; }
+  .myapp-section .myapp-us-row {
+    padding-left: 72px;
+    padding-right: 72px; }
+    @media (max-width: 575.98px) {
+      .myapp-section .myapp-us-row {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .myapp-section h6 {
+    color: #ffffff;
+    font-size: 20;
+    position: relative;
+    padding-left: 80px;
+    font-weight: 500; }
+    .myapp-section h6::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 73px;
+      height: 1px;
+      background-color: #e3106e; }
+  .myapp-section h2 {
+    color: #ffffff; }
+  .myapp-section .myapp-paragraph {
+    color: #ffffff;
+    font-weight: 400; }
+  .myapp-section .app-btn {
+    font-weight: 500; }
+    .myapp-section .app-btn p {
+      padding-top: 14px;
+      padding-left: 10px;
+      line-height: 20px; }
+    .myapp-section .app-btn .small-text-btn {
+      margin-top: 10px;
+      font-size: 14px; }
+  @media (max-width: 1600px) {
+    .myapp-section .myapp-img {
+      right: 100px; } }
+  @media (max-width: 1399.98px) {
+    .myapp-section .myapp-img {
+      right: 25px;
+      height: 543px;
+      width: 580px; } }
+  @media (max-width: 1199.98px) {
+    .myapp-section .myapp-img {
+      width: 536px;
+      right: 40px;
+      height: 455px;
+      right: 5px; }
+    .myapp-section h6 {
+      font-size: 16px; }
+    .myapp-section .myapp-paragraph {
+      font-size: 14px; }
+    .myapp-section .template-btn {
+      font-size: 16px; } }
+  @media (max-width: 1059.98px) {
+    .myapp-section .myapp-img {
+      width: 487px;
+      height: 434px;
+      right: 2px;
+      bottom: 54px; } }
+  @media (max-width: 991.98px) {
+    .myapp-section .myapp-img {
+      display: none; }
+    .myapp-section h6 {
+      font-size: 16px; }
+    .myapp-section .myapp-paragraph {
+      font-size: 14px; } }
+  @media (max-width: 767.98px) {
+    .myapp-section h6 {
+      font-size: 16px; }
+    .myapp-section .myapp-paragraph {
+      font-size: 14px; } }
+  @media (max-width: 575.98px) {
+    .myapp-section .myapp-img {
+      display: none; }
+    .myapp-section h6 {
+      font-size: 16px; }
+    .myapp-section .myapp-paragraph {
+      font-size: 14px; } }
+  @media (max-width: 460px) {
+    .myapp-section .myapp-img {
+      display: none; }
+    .myapp-section h6 {
+      font-size: 16px; }
+    .myapp-section .myapp-paragraph {
+      font-size: 14px; }
+    .myapp-section .myapp-btn {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+  @media (max-width: 400px) {
+    .myapp-section .myapp-img {
+      display: none; }
+    .myapp-section h6 {
+      font-size: 16px; }
+    .myapp-section .myapp-paragraph {
+      font-size: 14px; }
+    .myapp-section .myapp-btn {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .canvus-menu {
   position: fixed;

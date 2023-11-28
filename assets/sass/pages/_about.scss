@@ -155,3 +155,472 @@
     }
   }
 }
+
+// Faq Section
+
+.faq-section {
+  background-color: $bg-calcultor-section;
+  position: relative;
+  // padding-top: 20px;
+  padding-bottom: 70px;
+
+  h6 {
+    color: $text-color;
+    font-size: 20;
+    position: relative;
+    padding-left: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 73px;
+      height: 1px;
+      background-color: $primary-color;
+    }
+  }
+
+  h2 {
+    color: $text-color;
+  }
+
+  .faq-img {
+    width: 640px;
+    height: 680px;
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    margin-left: 200px;
+  }
+  // .accordians-body {
+  //   background-color: $bg-calcultor-section !important;
+  //   .accordion-item {
+  //     .accordion-header {
+  //       background-color: $bg-calcultor-section;
+  //     }
+  //     .accordion-collapse {
+  //       border: 0;
+  //       background-color: $bg-calcultor-section;
+  //     }
+  //   }
+  //   .accordion-button:focus {
+  //     box-shadow: none;
+  //     border: none;
+  //   }
+  //   .accordion-button:not(.collapsed) {
+  //     background-color: $bg-calcultor-section;
+  //     color: #dc3545;
+  //   }
+  //   .accordion-body {
+  //     padding: 15px;
+  //     // background-color: #f6;
+  //   }
+  //   .accordion-button::after {
+  //     width: auto;
+  //     height: auto;
+  //     content: "+";
+  //     font-size: 40px;
+  //     background-image: none;
+  //     font-weight: 100;
+  //     color: #1b6ce5;
+  //     transform: translateY(-4px);
+  //   }
+  //   .accordion-button:not(.collapsed)::after {
+  //     width: auto;
+  //     height: auto;
+  //     // background-image: none;
+  //     content: "-";
+  //     font-size: 48px;
+  //     transform: translate(-5px, -4px);
+  //     transform: rotate(0deg);
+  //   }
+  // }
+
+  .hyp-accordians {
+    background-color: transparent;
+    .accordion-item,
+    .accordion-header,
+    .accordion-button {
+      background-color: transparent;
+      color: $text-color;
+    }
+    .accordion-item {
+      border-bottom: 1px solid $text-shade-600;
+      border-width: thin;
+    }
+    .accordion-button {
+      &:focus {
+        box-shadow: none;
+      }
+      &:after {
+        width: auto;
+        height: auto;
+        content: "+";
+        font-size: 40px;
+        background-image: none;
+        font-weight: 100;
+        color: $text-color;
+        transform: translateY(-4px);
+      }
+      &:not(.collapsed)::after {
+        width: auto;
+        height: auto;
+        // background-image: none;
+        content: "-";
+        font-size: 48px;
+        transform: translate(-5px, -4px);
+        transform: rotate(0deg);
+        color: $text-color;
+      }
+    }
+  }
+  @include screen-1700 {
+    .faq-img {
+      width: 590px;
+      height: 645px;
+      margin-left: 130px;
+    }
+  }
+
+  @include screen-1400 {
+    .faq-img {
+      width: 540px;
+      height: 590px;
+      margin-left: 100px;
+    }
+    .hyp-accordians {
+      padding-right: 40px;
+    }
+  }
+  @include screen-1260 {
+    .faq-img {
+      width: 490px;
+      height: 560px;
+      bottom: 180px;
+      margin-left: 70px;
+    }
+  }
+  @include screen-1060 {
+    .faq-img {
+      width: 440px;
+      height: 530px;
+      bottom: 200px;
+      margin-left: 50px;
+    }
+  }
+  @include screen-992 {
+    .faq-img {
+      width: 420px;
+      height: 530px;
+      bottom: 220px;
+      margin-left: 24px;
+    }
+  }
+  @include screen-820 {
+    .faq-img {
+      width: 390px;
+      height: 500px;
+      bottom: 260px;
+      margin-left: 30px;
+    }
+
+    .accordion-item {
+      font-size: 14px;
+    }
+  }
+  @include screen-768 {
+    .faq-img {
+      position: relative;
+      width: 450px;
+      height: 505px;
+      bottom: 55px;
+      margin-left: 90px;
+    }
+  }
+  @include portrait-phone {
+    .faq-img {
+      position: relative;
+      width: 350px;
+      height: 405px;
+      bottom: 55px;
+      margin-left: 70px;
+    }
+  }
+  @include screen-460 {
+    .faq-img {
+      position: relative;
+      width: 300px;
+      height: 380px;
+      bottom: 55px;
+      margin-left: 50px;
+    }
+  }
+  @include screen-400 {
+    .faq-img {
+      position: relative;
+      width: 250px;
+      height: 330px;
+      bottom: 55px;
+      margin-left: 30px;
+    }
+  }
+}
+
+// Comission Section
+
+.comission-section {
+  background-color: $bg-calcultor-section;
+
+  padding-bottom: 50px;
+  .comission-card {
+    background-color: $bg-counter-box;
+    border-radius: 15px;
+    padding: 80px 0px;
+    height: 420px;
+    margin-left: 72px;
+    margin-right: 72px;
+    .comission-content {
+      text-align: center;
+      color: $text-color;
+      h2 {
+        font-weight: 600;
+      }
+      p {
+        max-width: 726px;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        font-weight: 500;
+      }
+      @include large-screen {
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 16px;
+          max-width: 680px;
+        }
+      }
+      @include screen-992 {
+        h2 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 14px;
+          max-width: 550px;
+        }
+      }
+      @include screen-768 {
+        h2 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 14px;
+          max-width: 450px;
+        }
+      }
+      @include portrait-phone {
+        h2 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 14px;
+          max-width: 350px;
+        }
+      }
+    }
+    @include screen-768 {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    @include screen-400 {
+      padding: 40px 0px;
+    }
+  }
+}
+
+// HYIP APP Section
+
+.myapp-section {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background-color: $bg-calcultor-section;
+  position: relative;
+  overflow: hidden;
+
+  .myapp-img {
+    position: absolute;
+    width: 650px;
+    height: 550px;
+    right: 190px;
+    bottom: 29px;
+  }
+
+  .myapp-us-row {
+    padding-left: 72px;
+    padding-right: 72px;
+
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  h6 {
+    color: $text-color;
+    font-size: 20;
+    position: relative;
+    padding-left: 80px;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 73px;
+      height: 1px;
+      background-color: $primary-color;
+    }
+  }
+
+  h2 {
+    color: $text-color;
+  }
+
+  .myapp-paragraph {
+    color: $text-color;
+    font-weight: 400;
+  }
+  .app-btn {
+    font-weight: 500;
+    p {
+      padding-top: 14px;
+      padding-left: 10px;
+      line-height: 20px;
+    }
+    .small-text-btn {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+
+  @include screen-1600 {
+    .myapp-img {
+      right: 100px;
+    }
+  }
+
+  @include screen-1400 {
+    .myapp-img {
+      right: 25px;
+      height: 543px;
+      width: 580px;
+    }
+  }
+
+  @include large-screen {
+    .myapp-img {
+      // z-index: 0;
+      width: 536px;
+      right: 40px;
+      height: 455px;
+      right: 5px;
+    }
+
+    h6 {
+      font-size: 16px;
+    }
+
+    .myapp-paragraph {
+      font-size: 14px;
+    }
+
+    .template-btn {
+      font-size: 16px;
+    }
+  }
+  @include screen-1060 {
+    .myapp-img {
+      width: 487px;
+      height: 434px;
+      right: 2px;
+      bottom: 54px;
+    }
+  }
+
+  @include screen-992 {
+    .myapp-img {
+      display: none;
+    }
+
+    h6 {
+      font-size: 16px;
+    }
+
+    .myapp-paragraph {
+      font-size: 14px;
+    }
+  }
+
+  @include screen-768 {
+    h6 {
+      font-size: 16px;
+    }
+
+    .myapp-paragraph {
+      font-size: 14px;
+    }
+  }
+
+  @include portrait-phone {
+    .myapp-img {
+      display: none;
+    }
+
+    h6 {
+      font-size: 16px;
+    }
+
+    .myapp-paragraph {
+      font-size: 14px;
+    }
+  }
+
+  @include screen-460 {
+    .myapp-img {
+      display: none;
+    }
+
+    h6 {
+      font-size: 16px;
+    }
+
+    .myapp-paragraph {
+      font-size: 14px;
+    }
+
+    .myapp-btn {
+      flex-wrap: wrap;
+    }
+  }
+
+  @include screen-400 {
+    .myapp-img {
+      display: none;
+    }
+
+    h6 {
+      font-size: 16px;
+    }
+
+    .myapp-paragraph {
+      font-size: 14px;
+    }
+
+    .myapp-btn {
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -124,6 +124,33 @@
   }
 }
 
+.primary-btn-app-section {
+  background-color: $primary-color;
+  color: $text-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -90px;
+    top: -135%;
+    width: 190%;
+    height: 135%;
+    background-color: $bg-dark-1;
+    z-index: -1;
+    border-radius: 50%;
+    transition: $transition-base;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: $text-shade-300;
+
+    &::before {
+      top: -10px;
+    }
+  }
+}
+
 .white-btn {
   background-color: $bg-white-1;
   color: $text-shade-300;
