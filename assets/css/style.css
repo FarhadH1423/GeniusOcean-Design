@@ -4906,19 +4906,30 @@ form.newsletter-form .template-btn {
           font-weight: 500; }
       @media (max-width: 1199.98px) {
         .investor-section .investor-rows .counter-box .icon-box {
-          width: 213px;
-          height: 213px;
-          top: 15%;
-          left: 50%; }
+          width: 150px !important;
+          height: 150px !important;
+          top: 28% !important;
+          left: 49% !important; }
+          .investor-section .investor-rows .counter-box .icon-box img {
+            width: 150px;
+            height: 150px; }
         .investor-section .investor-rows .counter-box .overlay-box {
-          top: -101px;
-          left: -66px;
-          width: 233px;
-          height: 233px; }
-        .investor-section .investor-rows .counter-box .counter-content h5 {
-          font-size: 20px; }
-        .investor-section .investor-rows .counter-box .counter-content h6 {
-          font-size: 16px; } }
+          top: -58px !important;
+          left: -37px !important;
+          width: 170px !important;
+          height: 170px !important; }
+        .investor-section .investor-rows .counter-box .counter-content {
+          padding-top: 70px; }
+          .investor-section .investor-rows .counter-box .counter-content h5 {
+            font-size: 20px; }
+          .investor-section .investor-rows .counter-box .counter-content h6 {
+            font-size: 16px; } }
+      @media (max-width: 991.98px) {
+        .investor-section .investor-rows .counter-box {
+          margin-top: 130px; } }
+    @media (max-width: 991.98px) {
+      .investor-section .investor-rows {
+        padding-top: 0; } }
 
 .canvus-menu {
   position: fixed;
