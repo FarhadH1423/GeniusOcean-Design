@@ -2106,7 +2106,9 @@ p {
             color: #ffffff;
             font-size: 16px; }
       .calculator-section .form-areas .form-feild .btn-forms {
-        width: 100%; }
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px; }
   @media (max-width: 1860px) {
     .calculator-section .calcultor-img {
       width: 650px;
@@ -4211,6 +4213,97 @@ p {
           font-size: 30px; }
         .contact-us-section .contact-box h6 {
           font-size: 18px; } }
+
+.contact-form-section {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  background-color: #04032e;
+  position: relative;
+  overflow: hidden; }
+  .contact-form-section .contact-map {
+    position: absolute;
+    width: 667px;
+    height: 673px;
+    right: 190px;
+    bottom: 102px;
+    border-radius: 12px; }
+  .contact-form-section .contact-form-row {
+    padding-left: 72px;
+    padding-right: 72px; }
+    .contact-form-section .contact-form-row .contact-form-inside {
+      padding: 50px;
+      border-radius: 12px;
+      background-color: #38117f; }
+      .contact-form-section .contact-form-row .contact-form-inside h3 {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 30px; }
+      .contact-form-section .contact-form-row .contact-form-inside .btn-forms {
+        width: 100%; }
+    .contact-form-section .contact-form-row input[type="text"],
+    .contact-form-section .contact-form-row select,
+    .contact-form-section .contact-form-row textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #999;
+      border-radius: 4px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      background-color: transparent;
+      color: #ffffff; }
+    @media (max-width: 575.98px) {
+      .contact-form-section .contact-form-row {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  @media (max-width: 1860px) {
+    .contact-form-section .contact-map {
+      right: 90px; } }
+  @media (max-width: 1600px) {
+    .contact-form-section .contact-map {
+      right: 50px;
+      width: 600px; } }
+  @media (max-width: 1399.98px) {
+    .contact-form-section .contact-map {
+      right: 10px;
+      width: 550px; } }
+  @media (max-width: 1199.98px) {
+    .contact-form-section .contact-map {
+      right: 10px;
+      width: 500px;
+      height: 664px; }
+    .contact-form-section .contact-form-row {
+      padding-left: 40px;
+      padding-right: 40px; }
+      .contact-form-section .contact-form-row .contact-form-inside h3 {
+        font-size: 30px; } }
+  @media (max-width: 1059.98px) {
+    .contact-form-section .contact-map {
+      right: 10px;
+      width: 480px;
+      height: 664px; }
+    .contact-form-section .contact-form-row {
+      padding-left: 30px;
+      padding-right: 30px; }
+      .contact-form-section .contact-form-row .contact-form-inside h3 {
+        font-size: 30px; } }
+  @media (max-width: 991.98px) {
+    .contact-form-section {
+      padding-top: 0px; }
+      .contact-form-section .contact-form-row .contact-form-inside h3 {
+        font-size: 20px; }
+      .contact-form-section .contact-form-row .contact-form-inside .btn-forms {
+        width: 100%;
+        font-size: 16px; }
+      .contact-form-section .contact-md-map {
+        border-radius: 12px; } }
+  @media (max-width: 575.98px) {
+    .contact-form-section .contact-form-row .contact-form-inside .btn-forms {
+      width: 100%;
+      font-size: 14px; } }
 
 .newsletter-section {
   background-repeat: no-repeat;

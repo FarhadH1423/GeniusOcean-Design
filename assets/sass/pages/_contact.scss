@@ -1,207 +1,337 @@
 .contact-us-section {
-    padding: 140px 0;
-    background-color: $secondary-color;
+  padding: 140px 0;
+  background-color: $secondary-color;
 
-    .contact-us-section-header {
-        color: $text-color;
-        justify-content: center;
-        text-align: center;
-        padding-bottom: 110px;
+  .contact-us-section-header {
+    color: $text-color;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 110px;
 
-        h6 {
-            color: $text-color;
-            font-size: 20;
-            position: relative;
-            display: inline-block;
+    h6 {
+      color: $text-color;
+      font-size: 20;
+      position: relative;
+      display: inline-block;
 
-            &::before {
-                content: "";
-                position: absolute;
+      &::before {
+        content: "";
+        position: absolute;
 
-                top: 12px;
-                right: 105%;
-                width: 73px;
-                height: 1px;
-                background-color: $primary-color;
-            }
-        }
-
-        p {
-            max-width: 696px;
-            margin: 0 auto;
-        }
+        top: 12px;
+        right: 105%;
+        width: 73px;
+        height: 1px;
+        background-color: $primary-color;
+      }
     }
 
-    .contact-row {
-        padding-left: 72px;
-        padding-right: 72px;
+    p {
+      max-width: 696px;
+      margin: 0 auto;
+    }
+  }
 
-        @include portrait-phone {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+  .contact-row {
+    padding-left: 72px;
+    padding-right: 72px;
+
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .contact-box {
+    padding: 50px 30px;
+    background-color: $bg-counter-box;
+    border-radius: 15px;
+    text-align: center;
+    transition: $transition-base;
+    position: relative;
+
+    &:hover {
+      box-shadow: var(--box-shadow);
     }
 
-    .contact-box {
-        padding: 50px 30px;
+    h4 {
+      padding-top: 40px;
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: $text-color;
+      font-weight: 500;
+    }
+
+    h6 {
+      font-size: 22px;
+      color: $text-color;
+      font-weight: 400;
+    }
+
+    .icon-wraper {
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 120px;
+
+      .icon-box {
         background-color: $bg-counter-box;
-        border-radius: 15px;
-        text-align: center;
-        transition: $transition-base;
-        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 11;
 
-        &:hover {
-            box-shadow: var(--box-shadow);
+        img {
+          width: 60px;
+          height: 60px;
         }
+      }
 
-        h4 {
-            padding-top: 40px;
-            font-size: 40px;
-            margin-bottom: 10px;
-            color: $text-color;
-            font-weight: 500;
-        }
-
-        h6 {
-            font-size: 22px;
-            color: $text-color;
-            font-weight: 400;
-        }
-
-        .icon-wraper {
-            position: absolute;
-            top: -20%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 120px;
-            height: 120px;
-
-            .icon-box {
-                background-color: $bg-counter-box;
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 11;
-
-                img {
-                    width: 60px;
-                    height: 60px;
-                }
-            }
-
-            .overlay-box {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 0;
-                background-color: $secondary-color;
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-            }
-        }
-
-        @include screen-400 {
-            margin-bottom: 80px;
-
-            h3 {
-                padding-top: 10px;
-                font-size: 40px;
-            }
-
-            p {
-                font-size: 20px;
-            }
-        }
-
-        @include screen-460 {
-            margin-bottom: 80px;
-
-            h3 {
-                padding-top: 10px;
-                font-size: 40px;
-            }
-
-            p {
-                font-size: 20px;
-            }
-        }
-
-        @include portrait-phone {
-            margin-bottom: 80px;
-
-            h3 {
-                padding-top: 10px;
-                font-size: 40px;
-            }
-
-            p {
-                font-size: 20px;
-            }
-        }
-
-
-
-
-
-
-        @include screen-1290 {
-            margin-bottom: 20px;
-
-            h4 {
-                padding-top: 30px;
-                font-size: 30px;
-            }
-
-            h6 {
-                font-size: 18px;
-            }
-        }
-
-        @include screen-1060 {
-            margin-bottom: 20px;
-
-            h4 {
-                padding-top: 30px;
-                font-size: 26px;
-            }
-
-            h6 {
-                font-size: 16px;
-            }
-        }
-
-        @include screen-992 {
-            margin-bottom: 80px;
-
-            h4 {
-                padding-top: 30px;
-                font-size: 30px;
-            }
-
-            h6 {
-                font-size: 18px;
-            }
-        }
-
-        @include screen-768 {
-            margin-bottom: 80px;
-            h4 {
-                padding-top: 30px;
-                font-size: 30px;
-            }
-
-            h6 {
-                font-size: 18px;
-            }
-        }
-
+      .overlay-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        background-color: $secondary-color;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
     }
+
+    @include screen-400 {
+      margin-bottom: 80px;
+
+      h3 {
+        padding-top: 10px;
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    @include screen-460 {
+      margin-bottom: 80px;
+
+      h3 {
+        padding-top: 10px;
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    @include portrait-phone {
+      margin-bottom: 80px;
+
+      h3 {
+        padding-top: 10px;
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    @include screen-1290 {
+      margin-bottom: 20px;
+
+      h4 {
+        padding-top: 30px;
+        font-size: 30px;
+      }
+
+      h6 {
+        font-size: 18px;
+      }
+    }
+
+    @include screen-1060 {
+      margin-bottom: 20px;
+
+      h4 {
+        padding-top: 30px;
+        font-size: 26px;
+      }
+
+      h6 {
+        font-size: 16px;
+      }
+    }
+
+    @include screen-992 {
+      margin-bottom: 80px;
+
+      h4 {
+        padding-top: 30px;
+        font-size: 30px;
+      }
+
+      h6 {
+        font-size: 18px;
+      }
+    }
+
+    @include screen-768 {
+      margin-bottom: 80px;
+      h4 {
+        padding-top: 30px;
+        font-size: 30px;
+      }
+
+      h6 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// Contact Form
+
+.contact-form-section {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  background-color: $bg-calcultor-section;
+  position: relative;
+  overflow: hidden;
+
+  .contact-map {
+    position: absolute;
+    width: 667px;
+    height: 673px;
+    right: 190px;
+    bottom: 102px;
+    border-radius: 12px;
+  }
+
+  .contact-form-row {
+    padding-left: 72px;
+    padding-right: 72px;
+
+    .contact-form-inside {
+      padding: 50px;
+      border-radius: 12px;
+      background-color: $bg-counter-box;
+      h3 {
+        color: $text-color;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      .btn-forms {
+        width: 100%;
+      }
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #999;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      background-color: transparent;
+      color: $text-color;
+    }
+
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @include screen-1860 {
+    .contact-map {
+      right: 90px;
+    }
+  }
+  @include screen-1600 {
+    .contact-map {
+      right: 50px;
+      width: 600px;
+    }
+  }
+  @include screen-1400 {
+    .contact-map {
+      right: 10px;
+      width: 550px;
+    }
+  }
+  @include large-screen {
+    .contact-map {
+      right: 10px;
+      width: 500px;
+      height: 664px;
+    }
+    .contact-form-row {
+      padding-left: 40px;
+      padding-right: 40px;
+      .contact-form-inside {
+        h3 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  @include screen-1060 {
+    .contact-map {
+      right: 10px;
+      width: 480px;
+      height: 664px;
+    }
+    .contact-form-row {
+      padding-left: 30px;
+      padding-right: 30px;
+      .contact-form-inside {
+        h3 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  @include screen-992 {
+    padding-top: 0px;
+    .contact-form-row {
+      .contact-form-inside {
+        h3 {
+          font-size: 20px;
+        }
+        .btn-forms {
+          width: 100%;
+          font-size: 16px;
+        }
+      }
+    }
+    .contact-md-map {
+      border-radius: 12px;
+    }
+  }
+  @include portrait-phone {
+    .contact-form-row {
+      .contact-form-inside {
+        .btn-forms {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
