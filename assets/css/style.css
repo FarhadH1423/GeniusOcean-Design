@@ -1840,6 +1840,7 @@ p {
       -webkit-box-shadow: var(--box-shadow);
       box-shadow: var(--box-shadow); }
     .counter-section .counter-box h3 {
+      padding-top: 18px;
       font-size: 64px;
       margin-bottom: 10px;
       color: #ffffff; }
@@ -1856,7 +1857,7 @@ p {
       width: 100px;
       height: 100px; }
       .counter-section .counter-box .icon-wraper .icon-box {
-        background-color: white;
+        background-color: #38117f;
         width: 80px;
         height: 80px;
         border-radius: 50%;
@@ -1875,7 +1876,8 @@ p {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        z-index: 11; }
+        z-index: 11;
+        color: #ffffff; }
       .counter-section .counter-box .icon-wraper .overlay-box {
         position: absolute;
         top: 0;
@@ -1911,9 +1913,9 @@ p {
           font-size: 20px; } }
     @media (max-width: 767.98px) {
       .counter-section .counter-box {
-        margin-bottom: 80px; }
+        margin-bottom: 0px; }
         .counter-section .counter-box h3 {
-          padding-top: 10px;
+          padding-top: 20px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -1921,7 +1923,7 @@ p {
       .counter-section .counter-box {
         margin-bottom: 80px; }
         .counter-section .counter-box h3 {
-          padding-top: 10px;
+          padding-top: 20px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -1929,7 +1931,7 @@ p {
       .counter-section .counter-box {
         margin-bottom: 80px; }
         .counter-section .counter-box h3 {
-          padding-top: 10px;
+          padding-top: 20px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -1937,7 +1939,7 @@ p {
       .counter-section .counter-box {
         margin-bottom: 80px; }
         .counter-section .counter-box h3 {
-          padding-top: 10px;
+          padding-top: 20px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -1945,7 +1947,7 @@ p {
       .counter-section .counter-box {
         margin-bottom: 80px; }
         .counter-section .counter-box h3 {
-          padding-top: 10px;
+          padding-top: 20px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -2033,14 +2035,14 @@ p {
       width: 100%;
       text-align: center; } }
 
-@media (max-width: 400px) {
-  .about-img {
+@media (max-width: 460px) and (max-width: 400px) {
+  .about-us-section .about-img {
     display: none; }
-  h6 {
+  .about-us-section h6 {
     font-size: 16px; }
-  .about-paragraph {
+  .about-us-section .about-paragraph {
     font-size: 14px; }
-  .about-btn {
+  .about-us-section .about-btn {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; } }
 
@@ -2208,6 +2210,11 @@ p {
     .calculator-section {
       padding-top: 10px;
       padding-bottom: 60px; }
+      .calculator-section h2 {
+        font-size: 30px;
+        text-align: center; }
+      .calculator-section h6 {
+        font-size: 18px; }
       .calculator-section .calcultor-img {
         width: 380px;
         position: relative;
@@ -2241,7 +2248,13 @@ p {
         .calculator-section .calculation-details .calculator-paragraph {
           color: #ffffff;
           font-weight: 400;
-          font-size: 14px; } }
+          font-size: 14px; }
+      .calculator-section .form-areas .form-feild .form-inpt {
+        font-size: 14px; }
+      .calculator-section .btn-forms {
+        font-size: 14px; }
+      .calculator-section .form-btn {
+        padding: 14px 14px; } }
 
 .choose-us-section {
   padding-top: 100px;
