@@ -82,7 +82,7 @@
 
   @include portrait-phone {
     .hero-content {
-      margin-left: 20px;
+      margin-left: -25px;
     }
 
     .hero-header {
@@ -98,7 +98,7 @@
 
   @include screen-460 {
     .hero-content {
-      margin-left: 10px;
+      margin-left: -25px;
     }
 
     .hero-header {
@@ -114,7 +114,7 @@
 
   @include screen-400 {
     .hero-content {
-      margin-left: 0px;
+      margin-left: -35px;
       padding-left: 0px;
     }
 
@@ -126,6 +126,10 @@
     .hero-p {
       font-size: 14px;
       width: 220px;
+    }
+    .template-btn {
+      width: 100%;
+      text-align: center;
     }
   }
 }
@@ -436,6 +440,9 @@
     .about-paragraph {
       font-size: 14px;
     }
+    .template-btn {
+      font-size: 14px;
+    }
   }
 
   @include screen-460 {
@@ -454,24 +461,29 @@
     .about-btn {
       flex-wrap: wrap;
     }
+    .template-btn {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@include screen-400 {
+  .about-img {
+    display: none;
   }
 
-  @include screen-400 {
-    .about-img {
-      display: none;
-    }
+  h6 {
+    font-size: 16px;
+  }
 
-    h6 {
-      font-size: 16px;
-    }
+  .about-paragraph {
+    font-size: 14px;
+  }
 
-    .about-paragraph {
-      font-size: 14px;
-    }
-
-    .about-btn {
-      flex-wrap: wrap;
-    }
+  .about-btn {
+    flex-wrap: wrap;
   }
 }
 
