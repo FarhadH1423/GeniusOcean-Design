@@ -67,7 +67,7 @@ h2 {
   @media (max-width: 767.98px) {
     .h2,
     h2 {
-      font-size: 40px;
+      font-size: 30px;
       line-height: 50px; } }
 
 .h3,
@@ -109,12 +109,16 @@ h6 {
   @media (max-width: 767.98px) {
     .h6,
     h6 {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.2em; } }
 
 p {
   font-size: 16px;
   line-height: 26px; }
+  @media (max-width: 767.98px) {
+    p {
+      font-size: 14px;
+      line-height: 1.7; } }
 
 .lead {
   font-size: 18px;
@@ -1951,6 +1955,9 @@ p {
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
+  @media (max-width: 1290px) {
+    .counter-section {
+      padding-bottom: 40px; } }
 
 .about-us-section {
   padding-top: 120px;
@@ -1961,7 +1968,8 @@ p {
   .about-us-section .about-img {
     position: absolute;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    height: 725px; }
   .about-us-section .about-us-row {
     padding-left: 72px;
     padding-right: 72px; }
@@ -1989,16 +1997,20 @@ p {
     font-weight: 400; }
   @media (max-width: 1399.98px) {
     .about-us-section .about-img {
-      max-width: 678px; } }
+      height: 720px;
+      width: 850px; } }
   @media (max-width: 1199.98px) {
     .about-us-section .about-img {
-      z-index: 0; }
+      z-index: 0;
+      width: 700px;
+      height: 650px; }
     .about-us-section h6 {
       font-size: 16px; }
     .about-us-section .about-paragraph {
       font-size: 14px; }
     .about-us-section .template-btn {
-      font-size: 16px; } }
+      font-size: 14px;
+      padding: 14px 45px; } }
   @media (max-width: 991.98px) {
     .about-us-section .about-img {
       display: none; }
@@ -2014,6 +2026,8 @@ p {
   @media (max-width: 575.98px) {
     .about-us-section .about-img {
       display: none; }
+    .about-us-section h2 {
+      font-size: 30px; }
     .about-us-section h6 {
       font-size: 16px; }
     .about-us-section .about-paragraph {
@@ -2045,6 +2059,10 @@ p {
   .about-us-section .about-btn {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; } }
+  @media (max-width: 767.98px) {
+    .about-us-section {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
 
 .calculator-section {
   background-color: #04032e;
@@ -2068,19 +2086,21 @@ p {
     color: #ffffff; }
   .calculator-section .calculator-paragraph {
     color: #ffffff;
-    font-weight: 500; }
+    font-weight: 500;
+    padding-bottom: 10px; }
   .calculator-section .calcultor-img {
-    width: 700px;
+    width: 750px;
+    height: 790px;
     position: absolute;
-    left: 0;
-    bottom: 260px;
-    margin-left: 200px; }
+    left: -37px;
+    bottom: 150px;
+    margin-left: 145px; }
   .calculator-section .form-areas {
     background-color: #38117f;
     border-radius: 10px;
-    padding: 50px; }
+    padding: 25px; }
     .calculator-section .form-areas .form-feild {
-      padding: 50px; }
+      padding: 30px; }
       .calculator-section .form-areas .form-feild .form-inpt {
         border-radius: 10px;
         padding: 10px;
@@ -2122,87 +2142,91 @@ p {
             font-size: 16px; }
       .calculator-section .form-areas .form-feild .btn-forms {
         width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px; }
+        margin-top: 20px; }
   @media (max-width: 1860px) {
     .calculator-section .calcultor-img {
-      width: 650px;
+      width: 705px;
+      height: 760px;
       position: absolute;
-      left: 0;
-      bottom: 260px;
+      left: -60px;
+      bottom: 159px;
       margin-left: 150px; }
     .calculator-section .form-areas {
       padding: 20px;
       left: 0px; } }
-  @media (max-width: 1700px) {
-    .calculator-section .calcultor-img {
-      width: 600px;
-      position: absolute;
-      left: 0;
-      bottom: 280px;
-      margin-left: 150px; }
-    .calculator-section .form-areas {
-      padding: 18px; } }
   @media (max-width: 1600px) {
     .calculator-section .calcultor-img {
-      width: 600px;
+      width: 633px;
+      height: 707px;
       position: absolute;
-      left: 0;
-      bottom: 280px;
+      left: -57px;
+      bottom: 172px;
       margin-left: 100px; }
     .calculator-section .form-areas {
       padding: 16px; } }
   @media (max-width: 1460px) {
     .calculator-section .calcultor-img {
-      width: 600px;
+      width: 621px;
+      height: 695px;
       position: absolute;
-      left: 0;
-      bottom: 280px;
-      margin-left: 20px; }
-    .calculator-section .form-areas {
-      padding: 10px; } }
-  @media (max-width: 1290px) {
-    .calculator-section .calcultor-img {
-      width: 550px;
-      position: absolute;
-      left: 0;
-      bottom: 280px;
+      left: 0px;
+      bottom: 168px;
       margin-left: 20px; }
     .calculator-section .form-areas {
       padding: 10px; } }
   @media (max-width: 1260px) {
     .calculator-section .calcultor-img {
-      width: 550px;
+      width: 573px;
+      height: 670px;
       position: absolute;
-      left: 0;
-      bottom: 280px;
+      left: -11px;
+      bottom: 179px;
       margin-left: 20px; }
     .calculator-section .form-areas {
       padding: 10px; } }
   @media (max-width: 1199.98px) {
     .calculator-section .calcultor-img {
-      width: 480px;
+      width: 543px;
+      height: 674px;
       position: absolute;
-      left: 0;
-      bottom: 280px;
+      left: -20px;
+      bottom: 174px;
       margin-left: 20px; }
     .calculator-section .form-areas {
       padding: 10px; } }
+  @media (max-width: 1059.98px) {
+    .calculator-section .calcultor-img {
+      width: 505px;
+      height: 646px;
+      position: absolute;
+      left: -18px;
+      bottom: 188px;
+      margin-left: 20px; }
+    .calculator-section .form-areas {
+      padding: 5px; } }
   @media (max-width: 991.98px) {
     .calculator-section .calcultor-img {
-      width: 400px;
+      width: 425px;
+      height: 620px;
       position: absolute;
-      left: 0;
-      bottom: 320px;
+      left: -16px;
+      bottom: 173px;
       margin-left: 20px; }
+    .calculator-section h2 {
+      font-size: 32px; }
+    .calculator-section h6 {
+      font-size: 18px; }
+    .calculator-section .calculator-paragraph {
+      font-size: 16px; }
     .calculator-section .form-areas {
       padding: 5px; } }
   @media (max-width: 819.98px) {
     .calculator-section .calcultor-img {
       width: 380px;
+      height: 551px;
       position: absolute;
-      left: 0;
-      bottom: 320px;
+      left: -18px;
+      bottom: 182px;
       margin-left: 20px; }
     .calculator-section .form-areas {
       padding: 5px; } }
@@ -2212,13 +2236,15 @@ p {
       padding-bottom: 60px; }
       .calculator-section h2 {
         font-size: 30px;
-        text-align: center; }
+        padding-bottom: 0; }
       .calculator-section h6 {
-        font-size: 18px; }
+        font-size: 18px;
+        padding-bottom: 0; }
       .calculator-section .calcultor-img {
-        width: 380px;
+        width: 538px;
+        height: 637px;
         position: relative;
-        left: 50%;
+        left: 48%;
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -2230,14 +2256,26 @@ p {
           color: #ffffff;
           font-weight: 500;
           font-size: 16px; } }
+  @media (max-width: 575.98px) {
+    .calculator-section .calcultor-img {
+      width: 445px;
+      height: 558px;
+      position: relative;
+      left: 46%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      top: 0px;
+      bottom: 420px; } }
   @media (max-width: 460px) {
     .calculator-section {
       padding-top: 10px;
       padding-bottom: 40px; }
       .calculator-section .calcultor-img {
-        width: 200px;
+        width: 310px;
+        height: 425px;
         position: relative;
-        left: 50%;
+        left: 44%;
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -2255,6 +2293,17 @@ p {
         font-size: 14px; }
       .calculator-section .form-btn {
         padding: 14px 14px; } }
+  @media (max-width: 400px) {
+    .calculator-section .calcultor-img {
+      width: 270px;
+      height: 381px;
+      position: relative;
+      left: 44%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      top: 0px;
+      bottom: 420px; } }
 
 .choose-us-section {
   padding-top: 100px;
@@ -2391,6 +2440,9 @@ p {
     .offer-section .offer-section-header p {
       max-width: 558px;
       margin: 0 auto; }
+      @media (max-width: 767.98px) {
+        .offer-section .offer-section-header p {
+          font-size: 16px; } }
   .offer-section .offer-row-box {
     padding-left: 72px;
     padding-right: 72px; }
@@ -2433,7 +2485,7 @@ p {
         -ms-flex-align: center;
         align-items: center;
         position: absolute;
-        top: 68%;
+        top: 91%;
         left: 51%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -2444,7 +2496,7 @@ p {
           font-size: 20px; }
       .offer-section .offer-box .icon-wraper .overlay-box {
         position: absolute;
-        top: 36px;
+        top: 60px;
         left: -91px;
         z-index: 0;
         background-color: #04032e;
@@ -2456,12 +2508,25 @@ p {
           top: -15%; }
           .offer-section .offer-box .icon-wraper .icon-box {
             width: 232px;
-            height: 52px; }
+            height: 52px;
+            top: 72%;
+            left: 50%; }
           .offer-section .offer-box .icon-wraper .overlay-box {
             width: 253px;
             height: 62px;
-            top: 41px;
+            top: 46px;
             left: -77px; } }
+      @media (max-width: 1059.98px) {
+        .offer-section .offer-box .icon-wraper .icon-box {
+          width: 206px;
+          height: 52px;
+          top: 70%;
+          left: 50%; }
+        .offer-section .offer-box .icon-wraper .overlay-box {
+          width: 226px;
+          height: 62px;
+          top: 45px;
+          left: -64px; } }
       @media (max-width: 460px) {
         .offer-section .offer-box .icon-wraper {
           top: -15%; }
@@ -2474,8 +2539,21 @@ p {
             height: 62px;
             top: 62px;
             left: -48px; } }
+      @media (max-width: 460px) {
+        .offer-section .offer-box .icon-wraper {
+          top: -15%; }
+          .offer-section .offer-box .icon-wraper .icon-box {
+            width: 180px;
+            height: 50px;
+            top: 70px; }
+          .offer-section .offer-box .icon-wraper .overlay-box {
+            width: 195px;
+            height: 62px;
+            top: 43px;
+            left: -48px; } }
     .offer-section .offer-box .offer-content {
-      padding-left: 30px; }
+      padding-left: 30px;
+      padding-top: 20px; }
       .offer-section .offer-box .offer-content .offer-price h4 {
         text-align: start;
         color: #ffffff; }
@@ -2490,6 +2568,38 @@ p {
         font-weight: 500;
         text-align: start;
         line-height: 40px; }
+      @media (max-width: 1199.98px) {
+        .offer-section .offer-box .offer-content {
+          padding-left: 10px; }
+          .offer-section .offer-box .offer-content .offer-price h4 {
+            font-size: 24px; }
+          .offer-section .offer-box .offer-content ul > li {
+            font-size: 18px; } }
+      @media (max-width: 991.98px) {
+        .offer-section .offer-box .offer-content {
+          padding-left: 30px;
+          padding-top: 20px; }
+          .offer-section .offer-box .offer-content .offer-price h4 {
+            text-align: start;
+            color: #ffffff; }
+            .offer-section .offer-box .offer-content .offer-price h4 span {
+              font-size: 18px; }
+          .offer-section .offer-box .offer-content hr {
+            color: #ffffff;
+            opacity: 1.25; }
+          .offer-section .offer-box .offer-content ul > li {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 500;
+            text-align: start;
+            line-height: 40px; } }
+      @media (max-width: 899.98px) {
+        .offer-section .offer-box .offer-content {
+          padding-left: 10px; }
+          .offer-section .offer-box .offer-content .offer-price h4 {
+            font-size: 24px; }
+          .offer-section .offer-box .offer-content ul > li {
+            font-size: 18px; } }
       @media (max-width: 460px) {
         .offer-section .offer-box .offer-content {
           padding-left: 5px; } }

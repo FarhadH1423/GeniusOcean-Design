@@ -267,7 +267,6 @@
     @include screen-768 {
       margin-bottom: 0px;
 
-
       h3 {
         padding-top: 20px;
         font-size: 40px;
@@ -330,6 +329,9 @@
       }
     }
   }
+  @include screen-1290 {
+    padding-bottom: 40px;
+  }
 }
 
 // About Us Section
@@ -345,6 +347,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    height: 725px;
     // max-width: 946px;
   }
 
@@ -386,13 +389,16 @@
 
   @include screen-1400 {
     .about-img {
-      max-width: 678px;
+      height: 720px;
+      width: 850px;
     }
   }
 
   @include large-screen {
     .about-img {
       z-index: 0;
+      width: 700px;
+      height: 650px;
     }
 
     h6 {
@@ -404,7 +410,8 @@
     }
 
     .template-btn {
-      font-size: 16px;
+      font-size: 14px;
+      padding: 14px 45px;
     }
   }
 
@@ -435,6 +442,9 @@
   @include portrait-phone {
     .about-img {
       display: none;
+    }
+    h2 {
+      font-size: 30px;
     }
 
     h6 {
@@ -491,9 +501,11 @@
       }
     }
   }
+  @include screen-768 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
-
-
 
 // Calculator Section
 .calculator-section {
@@ -526,23 +538,25 @@
   .calculator-paragraph {
     color: $text-color;
     font-weight: 500;
+    padding-bottom: 10px;
   }
 
   .calcultor-img {
-    width: 700px;
+    width: 750px;
+    height: 790px;
     position: absolute;
-    left: 0;
-    bottom: 260px;
-    margin-left: 200px;
+    left: -37px;
+    bottom: 150px;
+    margin-left: 145px;
   }
 
   .form-areas {
     background-color: $bg-counter-box;
     border-radius: 10px;
-    padding: 50px;
+    padding: 25px;
 
     .form-feild {
-      padding: 50px;
+      padding: 30px;
 
       .form-inpt {
         border-radius: 10px;
@@ -578,17 +592,18 @@
       .btn-forms {
         width: 100%;
         margin-top: 20px;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
       }
     }
   }
 
   @include screen-1860 {
     .calcultor-img {
-      width: 650px;
+      width: 705px;
+      height: 760px;
       position: absolute;
-      left: 0;
-      bottom: 260px;
+      left: -60px;
+      bottom: 159px;
       margin-left: 150px;
     }
 
@@ -598,26 +613,13 @@
     }
   }
 
-  @include screen-1700 {
-    .calcultor-img {
-      width: 600px;
-      position: absolute;
-      left: 0;
-      bottom: 280px;
-      margin-left: 150px;
-    }
-
-    .form-areas {
-      padding: 18px;
-    }
-  }
-
   @include screen-1600 {
     .calcultor-img {
-      width: 600px;
+      width: 633px;
+      height: 707px;
       position: absolute;
-      left: 0;
-      bottom: 280px;
+      left: -57px;
+      bottom: 172px;
       margin-left: 100px;
     }
 
@@ -628,24 +630,11 @@
 
   @include screen-1460 {
     .calcultor-img {
-      width: 600px;
+      width: 621px;
+      height: 695px;
       position: absolute;
-      left: 0;
-      bottom: 280px;
-      margin-left: 20px;
-    }
-
-    .form-areas {
-      padding: 10px;
-    }
-  }
-
-  @include screen-1290 {
-    .calcultor-img {
-      width: 550px;
-      position: absolute;
-      left: 0;
-      bottom: 280px;
+      left: 0px;
+      bottom: 168px;
       margin-left: 20px;
     }
 
@@ -656,10 +645,11 @@
 
   @include screen-1260 {
     .calcultor-img {
-      width: 550px;
+      width: 573px;
+      height: 670px;
       position: absolute;
-      left: 0;
-      bottom: 280px;
+      left: -11px;
+      bottom: 179px;
       margin-left: 20px;
     }
 
@@ -670,10 +660,11 @@
 
   @include large-screen {
     .calcultor-img {
-      width: 480px;
+      width: 543px;
+      height: 674px;
       position: absolute;
-      left: 0;
-      bottom: 280px;
+      left: -20px;
+      bottom: 174px;
       margin-left: 20px;
     }
 
@@ -682,13 +673,38 @@
     }
   }
 
+  @include screen-1060 {
+    .calcultor-img {
+      width: 505px;
+      height: 646px;
+      position: absolute;
+      left: -18px;
+      bottom: 188px;
+      margin-left: 20px;
+    }
+
+    .form-areas {
+      padding: 5px;
+    }
+  }
   @include screen-992 {
     .calcultor-img {
-      width: 400px;
+      width: 425px;
+      height: 620px;
       position: absolute;
-      left: 0;
-      bottom: 320px;
+      left: -16px;
+      bottom: 173px;
       margin-left: 20px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+
+    h6 {
+      font-size: 18px;
+    }
+    .calculator-paragraph {
+      font-size: 16px;
     }
 
     .form-areas {
@@ -699,9 +715,10 @@
   @include screen-820 {
     .calcultor-img {
       width: 380px;
+      height: 551px;
       position: absolute;
-      left: 0;
-      bottom: 320px;
+      left: -18px;
+      bottom: 182px;
       margin-left: 20px;
     }
 
@@ -716,19 +733,20 @@
 
     h2 {
       font-size: 30px;
-      text-align: center;
+      padding-bottom: 0;
     }
 
     h6 {
       font-size: 18px;
-
+      padding-bottom: 0;
     }
 
     .calcultor-img {
-      width: 380px;
+      width: 538px;
+      height: 637px;
       position: relative;
 
-      left: 50%;
+      left: 48%;
       transform: translateX(-50%);
       top: 0px;
       bottom: 420px;
@@ -745,15 +763,27 @@
     }
   }
 
+  @include portrait-phone {
+    .calcultor-img {
+      width: 445px;
+      height: 558px;
+      position: relative;
+      left: 46%;
+      transform: translateX(-50%);
+      top: 0px;
+      bottom: 420px;
+    }
+  }
+
   @include screen-460 {
     padding-top: 10px;
     padding-bottom: 40px;
 
     .calcultor-img {
-      width: 200px;
+      width: 310px;
+      height: 425px;
       position: relative;
-
-      left: 50%;
+      left: 44%;
       transform: translateX(-50%);
       top: 0px;
       bottom: 420px;
@@ -783,6 +813,17 @@
 
     .form-btn {
       padding: 14px 14px;
+    }
+  }
+  @include screen-400 {
+    .calcultor-img {
+      width: 270px;
+      height: 381px;
+      position: relative;
+      left: 44%;
+      transform: translateX(-50%);
+      top: 0px;
+      bottom: 420px;
     }
   }
 }
@@ -961,6 +1002,9 @@
     p {
       max-width: 558px;
       margin: 0 auto;
+      @include screen-768 {
+        font-size: 16px;
+      }
     }
   }
 
@@ -1003,7 +1047,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 68%;
+        top: 91%;
         left: 51%;
         transform: translate(-50%, -50%);
         z-index: 11;
@@ -1016,7 +1060,7 @@
 
       .overlay-box {
         position: absolute;
-        top: 36px;
+        top: 60px;
         left: -91px;
         z-index: 0;
         background-color: $bg-calcultor-section;
@@ -1031,16 +1075,35 @@
         .icon-box {
           width: 232px;
           height: 52px;
+          top: 72%;
+          left: 50%;
         }
 
         .overlay-box {
           width: 253px;
           height: 62px;
-          top: 41px;
+          top: 46px;
           left: -77px;
         }
       }
 
+      @include screen-1060 {
+        .icon-box {
+          width: 206px;
+          height: 52px;
+          top: 70%;
+          left: 50%;
+        }
+
+        .overlay-box {
+          width: 226px;
+          height: 62px;
+          top: 45px;
+          left: -64px;
+        }
+      }
+
+      @include screen-820;
       @include screen-460 {
         top: -15%;
 
@@ -1057,10 +1120,28 @@
           left: -48px;
         }
       }
+
+      @include screen-460 {
+        top: -15%;
+
+        .icon-box {
+          width: 180px;
+          height: 50px;
+          top: 70px;
+        }
+
+        .overlay-box {
+          width: 195px;
+          height: 62px;
+          top: 43px;
+          left: -48px;
+        }
+      }
     }
 
     .offer-content {
       padding-left: 30px;
+      padding-top: 20px;
 
       .offer-price {
         h4 {
@@ -1079,12 +1160,66 @@
         opacity: 1.25;
       }
 
-      ul>li {
+      ul > li {
         color: $text-color;
         font-size: 22px;
         font-weight: 500;
         text-align: start;
         line-height: 40px;
+      }
+
+      @include large-screen {
+        padding-left: 10px;
+        .offer-price {
+          h4 {
+            font-size: 24px;
+          }
+        }
+        ul > li {
+          font-size: 18px;
+        }
+      }
+
+      @include screen-992 {
+        padding-left: 30px;
+        padding-top: 20px;
+
+        .offer-price {
+          h4 {
+            text-align: start;
+
+            span {
+              font-size: 18px;
+            }
+
+            color: $text-color;
+          }
+        }
+
+        hr {
+          color: $text-color;
+          opacity: 1.25;
+        }
+
+        ul > li {
+          color: $text-color;
+          font-size: 22px;
+          font-weight: 500;
+          text-align: start;
+          line-height: 40px;
+        }
+      }
+
+      @include screen-900 {
+        padding-left: 10px;
+        .offer-price {
+          h4 {
+            font-size: 24px;
+          }
+        }
+        ul > li {
+          font-size: 18px;
+        }
       }
 
       @include screen-460 {
@@ -1827,7 +1962,6 @@
 }
 
 .cr-pf-slider {
-
   .prev-arrow,
   .next-arrow {
     width: 60px;
@@ -1973,7 +2107,6 @@
 
 /********************* feedback section start **********************/
 .feedback-section {
-
   .circle-shape-1,
   .circle-shape-2 {
     width: 600px;
@@ -1994,7 +2127,6 @@
 }
 
 .feedback-slider {
-
   .prev-arrow,
   .next-arrow {
     position: absolute;
@@ -2025,7 +2157,6 @@
   }
 
   @include screen-768 {
-
     .prev-arrow,
     .next-arrow {
       display: none;
@@ -2046,7 +2177,7 @@
   @include screen-992 {
     padding: 60px;
 
-    &>img {
+    & > img {
       display: none;
     }
   }
@@ -2098,7 +2229,7 @@
       li {
         font-weight: 500;
 
-        +li {
+        + li {
           margin-top: 10px;
         }
       }
@@ -2131,7 +2262,6 @@
 
 /************************************* contact section start ********************************/
 .contact-section {
-
   .circle-shape,
   .circle-shape-2 {
     background-color: #272727;
@@ -2193,7 +2323,7 @@
       }
     }
 
-    +li {
+    + li {
       margin-top: 40px;
     }
 
@@ -2261,7 +2391,7 @@
 
     .blog-meta {
       span {
-        +span {
+        + span {
           position: relative;
 
           &::before {
