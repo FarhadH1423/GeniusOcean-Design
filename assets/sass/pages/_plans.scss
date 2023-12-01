@@ -1,0 +1,66 @@
+.plans_gateways-section {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    background-color: $bg-calcultor-section;
+    background-size: 100% auto;
+    // position: relative;
+
+    .gateways-section-header {
+        color: $text-color;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 60px;
+
+        h6 {
+            color: $text-color;
+            font-size: 20;
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: "";
+                position: absolute;
+
+                top: 12px;
+                right: 105%;
+                width: 73px;
+                height: 1px;
+                background-color: $primary-color;
+            }
+        }
+
+        p {
+            max-width: 558px;
+            margin: 0 auto;
+
+            @include portrait-phone {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .gateways-box {
+        background-color: $bg-counter-box;
+        padding: 45px;
+        border-radius: 8px;
+
+        // max-width: 170px;
+        // margin-right: 24px;
+        @include screen-1290 {
+            padding: 30px;
+        }
+
+        @include large-screen {
+            padding: 20px;
+        }
+
+        @include screen-992 {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include screen-768 {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}

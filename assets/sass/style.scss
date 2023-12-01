@@ -18,6 +18,8 @@ Version: 1.1.0
 @import "theme/theme-class";
 @import "theme/preloader";
 @import "theme/animations";
+@import "theme/theme-switch";
+
 
 /******************************** components ******************************/
 @import "components/breadcrumb";
@@ -30,17 +32,9 @@ Version: 1.1.0
 
 /****************************** page styles ******************************/
 @import "pages/index-1";
-@import "pages/index-2";
 @import "pages/blog";
 @import "pages/contact";
+@import "pages/plans";
 @import "pages/faq";
-@import "pages/appointment";
-@import "pages/projects";
-@import "pages/team";
-@import "pages/services";
 @import "pages/about";
-@import "pages/index-3";
-@import "pages/index-4";
-@import "pages/index-5";
 @import "pages/term";
-@import "theme/theme-switch";

@@ -770,6 +770,9 @@
   }
 
   @include portrait-phone {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
     .calcultor-img {
       width: 445px;
       height: 558px;
@@ -779,6 +782,7 @@
       top: 0px;
       bottom: 420px;
     }
+
   }
 
   @include screen-460 {
@@ -1464,7 +1468,8 @@
         font-size: 14px;
       }
     }
-    @include screen-992{
+
+    @include screen-992 {
       padding-bottom: 10px;
     }
   }
