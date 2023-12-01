@@ -121,6 +121,7 @@
 
           top: 28% !important;
           left: 49% !important;
+
           img {
             width: 150px;
             height: 150px;
@@ -137,6 +138,7 @@
 
         .counter-content {
           padding-top: 70px;
+
           h5 {
             font-size: 20px;
           }
@@ -146,10 +148,12 @@
           }
         }
       }
+
       @include screen-992 {
         margin-top: 130px;
       }
     }
+
     @include screen-992 {
       padding-top: 0;
     }
@@ -193,6 +197,7 @@
     bottom: 150px;
     margin-left: 200px;
   }
+
   // .accordians-body {
   //   background-color: $bg-calcultor-section !important;
   //   .accordion-item {
@@ -239,20 +244,24 @@
 
   .hyp-accordians {
     background-color: transparent;
+
     .accordion-item,
     .accordion-header,
     .accordion-button {
       background-color: transparent;
       color: $text-color;
     }
+
     .accordion-item {
       border-bottom: 1px solid $text-shade-600;
       border-width: thin;
     }
+
     .accordion-button {
       &:focus {
         box-shadow: none;
       }
+
       &:after {
         width: auto;
         height: auto;
@@ -263,6 +272,7 @@
         color: $text-color;
         transform: translateY(-4px);
       }
+
       &:not(.collapsed)::after {
         width: auto;
         height: auto;
@@ -275,6 +285,7 @@
       }
     }
   }
+
   @include screen-1700 {
     .faq-img {
       width: 590px;
@@ -289,10 +300,12 @@
       height: 590px;
       margin-left: 100px;
     }
+
     .hyp-accordians {
       padding-right: 40px;
     }
   }
+
   @include screen-1260 {
     .faq-img {
       width: 490px;
@@ -301,6 +314,7 @@
       margin-left: 70px;
     }
   }
+
   @include screen-1060 {
     .faq-img {
       width: 440px;
@@ -309,6 +323,7 @@
       margin-left: 50px;
     }
   }
+
   @include screen-992 {
     .faq-img {
       width: 420px;
@@ -317,6 +332,7 @@
       margin-left: 24px;
     }
   }
+
   @include screen-820 {
     .faq-img {
       width: 390px;
@@ -329,6 +345,7 @@
       font-size: 14px;
     }
   }
+
   @include screen-768 {
     .faq-img {
       position: relative;
@@ -338,6 +355,7 @@
       margin-left: 90px;
     }
   }
+
   @include portrait-phone {
     .faq-img {
       position: relative;
@@ -347,6 +365,7 @@
       margin-left: 70px;
     }
   }
+
   @include screen-460 {
     .faq-img {
       position: relative;
@@ -356,6 +375,7 @@
       margin-left: 50px;
     }
   }
+
   @include screen-400 {
     .faq-img {
       position: relative;
@@ -373,6 +393,7 @@
   background-color: $bg-calcultor-section;
 
   padding-bottom: 50px;
+
   .comission-card {
     background-color: $bg-counter-box;
     border-radius: 15px;
@@ -380,12 +401,15 @@
     height: 420px;
     margin-left: 72px;
     margin-right: 72px;
+
     .comission-content {
       text-align: center;
       color: $text-color;
+
       h2 {
         font-weight: 600;
       }
+
       p {
         max-width: 726px;
         margin: 0 auto;
@@ -393,47 +417,57 @@
         justify-content: center;
         font-weight: 500;
       }
+
       @include large-screen {
         h2 {
           font-size: 40px;
         }
+
         p {
           font-size: 16px;
           max-width: 680px;
         }
       }
+
       @include screen-992 {
         h2 {
           font-size: 36px;
         }
+
         p {
           font-size: 14px;
           max-width: 550px;
         }
       }
+
       @include screen-768 {
         h2 {
           font-size: 32px;
         }
+
         p {
           font-size: 14px;
           max-width: 450px;
         }
       }
+
       @include portrait-phone {
         h2 {
           font-size: 28px;
         }
+
         p {
           font-size: 14px;
           max-width: 350px;
         }
       }
     }
+
     @include screen-768 {
       margin-left: 10px;
       margin-right: 10px;
     }
+
     @include screen-400 {
       padding: 40px 0px;
     }
@@ -493,13 +527,16 @@
     color: $text-color;
     font-weight: 400;
   }
+
   .app-btn {
     font-weight: 500;
+
     p {
       padding-top: 14px;
       padding-left: 10px;
       line-height: 20px;
     }
+
     .small-text-btn {
       margin-top: 10px;
       font-size: 14px;
@@ -541,6 +578,7 @@
       font-size: 16px;
     }
   }
+
   @include screen-1060 {
     .myapp-img {
       width: 487px;
@@ -603,6 +641,12 @@
 
     .myapp-btn {
       flex-wrap: wrap;
+
+      .app-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
     }
   }
 
