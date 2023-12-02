@@ -1211,9 +1211,12 @@ p {
       position: relative; }
     .crete-navmenu > ul li {
       display: inline-block;
-      position: relative; }
+      position: relative;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
       .crete-navmenu > ul li a {
-        display: block;
+        display: inline-block;
         padding: 55px 30px;
         font-weight: 500;
         color: #ffffff;
@@ -1222,10 +1225,36 @@ p {
         @media (max-width: 1199.98px) {
           .crete-navmenu > ul li a {
             padding: 55px 20px; } }
+      .crete-navmenu > ul li:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: transparent;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+      .crete-navmenu > ul li:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: transparent;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+      .crete-navmenu > ul li.active > a {
+        color: #e3106e; }
+      .crete-navmenu > ul li.active:after, .crete-navmenu > ul li.active:before {
+        background-color: #ffffff; }
       .crete-navmenu > ul li:hover > a {
         color: #e3106e; }
-      .crete-navmenu > ul li:hover::after {
-        color: #e3106e; }
+      .crete-navmenu > ul li:hover:after, .crete-navmenu > ul li:hover:before {
+        background-color: #ffffff; }
 
 .canvus-menu-toggle {
   width: 60px;
@@ -1256,7 +1285,7 @@ p {
 /****************** sticky header ****************/
 .header-sticky.sticky-on {
   position: fixed !important;
-  top: -5%;
+  top: -32px;
   left: 0;
   width: 100%;
   -webkit-animation: 1s fadeInDown;
@@ -1678,7 +1707,7 @@ p {
   position: fixed;
   top: 0;
   left: -310px;
-  background-color: #fecce4;
+  background-color: #38117f;
   z-index: 60;
   padding: 60px 24px;
   overflow-y: scroll;
@@ -1697,14 +1726,14 @@ p {
     .mobile-menu .mobile-nav-menu li {
       display: block; }
       .mobile-menu .mobile-nav-menu li + li {
-        border-top: 1px solid #333333; }
+        border-top: 1px solid #fff2f8; }
       .mobile-menu .mobile-nav-menu li a {
         display: block;
-        color: #191919;
+        color: #ffffff;
         padding: 10px 0;
         font-weight: 600; }
         .mobile-menu .mobile-nav-menu li a:hover {
-          color: #ffffff; }
+          color: #e3106e; }
       .mobile-menu .mobile-nav-menu li.has-submenu {
         position: relative; }
         .mobile-menu .mobile-nav-menu li.has-submenu > i {
@@ -3990,6 +4019,8 @@ p {
         margin-bottom: 30px; }
       .contact-form-section .contact-form-row .contact-form-inside .btn-forms {
         width: 100%; }
+    .contact-form-section .contact-form-row .contact-md-map {
+      width: 100%; }
     .contact-form-section .contact-form-row input[type="text"],
     .contact-form-section .contact-form-row select,
     .contact-form-section .contact-form-row textarea {
