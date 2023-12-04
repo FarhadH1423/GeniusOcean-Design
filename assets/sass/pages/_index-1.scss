@@ -1043,9 +1043,16 @@
     transition: $transition-base;
     position: relative;
     margin-bottom: 100px;
-
+    border: 2px solid transparent;
+    box-shadow: none;
+    background-origin: border-box;
     &:hover {
-      box-shadow: $box-shadow;
+      border: 2px solid $text-color;
+      .icon-wraper {
+        .icon-box {
+          border: 2px solid $text-color;
+        }
+      }
     }
 
     .icon-wraper {
@@ -1057,7 +1064,6 @@
       height: 100px;
 
       .icon-box {
-        // background-color: $bg-counter-box;
         width: 262px;
         height: 62px;
         border-radius: 40px;
@@ -1067,8 +1073,10 @@
         position: absolute;
         top: 91%;
         left: 51%;
+        transition: $transition-base;
         transform: translate(-50%, -50%);
         z-index: 11;
+        border: 2px solid transparent;
 
         h6 {
           color: $text-color;
