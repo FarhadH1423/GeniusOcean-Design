@@ -2369,6 +2369,10 @@ p {
         margin-bottom: 5px;
         color: #ffffff;
         font-size: 16px; }
+        .calculator-section .form-areas .form-feild .form-inpt .form-control:focus {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border-color: #ffffff; }
         .calculator-section .form-areas .form-feild .form-inpt .forms {
           height: 50px;
           background-color: #04032e;
