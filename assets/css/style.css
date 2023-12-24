@@ -1360,6 +1360,19 @@ p {
       padding: 14px 51px;
       font-size: 14px; } }
 
+.reply-btn {
+  padding: 9px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
 .form-btn {
   padding: 14px 51px;
   font-size: 18px;
@@ -1415,6 +1428,28 @@ p {
     background-color: transparent;
     color: #0d0d0d; }
     .primary-btn:hover::before {
+      top: -10px; }
+
+.reply-primary-btn {
+  background-color: #e3106e;
+  color: #ffffff; }
+  .reply-primary-btn::before {
+    content: "";
+    position: absolute;
+    left: -53px;
+    top: -135%;
+    width: 190%;
+    height: 135%;
+    background-color: #ffffff;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .reply-primary-btn:hover {
+    background-color: transparent;
+    color: #0d0d0d; }
+    .reply-primary-btn:hover::before {
       top: -10px; }
 
 .primary-btn-app-section {
@@ -4622,3 +4657,74 @@ form.newsletter-form .template-btn {
         font-weight: 300;
         font-size: 16px;
         line-height: 40px; } }
+
+.blog-details-row {
+  padding-left: 72px;
+  padding-right: 71px; }
+  .blog-details-row .blog-details-content .blog-details-img img {
+    width: 100%;
+    border-radius: 12px; }
+  .blog-details-row .blog-details-content .blog-info {
+    padding-top: 24px; }
+    .blog-details-row .blog-details-content .blog-info p {
+      color: #999; }
+  .blog-details-row .blog-details-content .blog-details-top h3,
+  .blog-details-row .blog-details-content .blog-details-bottom h3 {
+    color: #e6e6eb; }
+  .blog-details-row .blog-details-content .blog-details-top p,
+  .blog-details-row .blog-details-content .blog-details-bottom p {
+    padding-top: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 160%;
+    color: #e6e6eb; }
+  .blog-details-row .blog-details-content .blog-details-top ol > li,
+  .blog-details-row .blog-details-content .blog-details-bottom ol > li {
+    color: #e6e6eb;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 160%; }
+  .blog-details-row .blog-details-content .blog-inner-image {
+    padding-top: 20px; }
+    .blog-details-row .blog-details-content .blog-inner-image img {
+      width: 100%;
+      border-radius: 8px; }
+  .blog-details-row .blog-details-content .comment-section .comment-header {
+    padding-top: 60px; }
+    .blog-details-row .blog-details-content .comment-section .comment-header h4 {
+      color: #ffffff; }
+  .blog-details-row .blog-details-content .comment-section .main-comment .commentor {
+    padding-top: 35px;
+    position: relative; }
+    .blog-details-row .blog-details-content .comment-section .main-comment .commentor .commentor-img img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%; }
+    .blog-details-row .blog-details-content .comment-section .main-comment .commentor .commentor-info {
+      padding-left: 12px; }
+      .blog-details-row .blog-details-content .comment-section .main-comment .commentor .commentor-info p {
+        color: #999999;
+        line-height: 0; }
+      .blog-details-row .blog-details-content .comment-section .main-comment .commentor .commentor-info h6 {
+        color: #999999;
+        line-height: 2;
+        font-weight: 600; }
+    .blog-details-row .blog-details-content .comment-section .main-comment .commentor .blog-reply-btn {
+      padding-top: 45px;
+      position: absolute;
+      top: 0;
+      right: 0; }
+  .blog-details-row .blog-details-content .comment-section .main-comment .main-comment-text {
+    padding-top: 24px;
+    padding-left: 75px; }
+    .blog-details-row .blog-details-content .comment-section .main-comment .main-comment-text p {
+      color: #e6e6eb;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; }
+  .blog-details-row .blog-details-content .comment-section .comment-gap {
+    width: 100%;
+    height: 1px;
+    background-color: yellow; }
