@@ -4688,8 +4688,14 @@ form.newsletter-form .template-btn {
   .blog-details-row .blog-details-content .blog-inner-image {
     padding-top: 20px; }
     .blog-details-row .blog-details-content .blog-inner-image img {
-      width: 100%;
+      width: 50%;
       border-radius: 8px; }
+      @media (max-width: 1290px) {
+        .blog-details-row .blog-details-content .blog-inner-image img {
+          width: 48%; } }
+      @media (max-width: 991.98px) {
+        .blog-details-row .blog-details-content .blog-inner-image img {
+          width: 50%; } }
   .blog-details-row .blog-details-content .comment-section .comment-header {
     padding-top: 60px; }
     .blog-details-row .blog-details-content .comment-section .comment-header h4 {
@@ -4725,6 +4731,98 @@ form.newsletter-form .template-btn {
       font-weight: 400;
       line-height: 160%; }
   .blog-details-row .blog-details-content .comment-section .comment-gap {
+    margin-top: 24px;
     width: 100%;
     height: 1px;
-    background-color: yellow; }
+    background-color: #999999; }
+  .blog-details-row .blog-details-content .comment-section .reply {
+    margin-left: 73px; }
+  .blog-details-row .blog-details-content .leave-reply-section {
+    padding-bottom: 80px; }
+    .blog-details-row .blog-details-content .leave-reply-section h4 {
+      color: #ffffff;
+      margin-top: 70px;
+      margin-bottom: 35px; }
+    .blog-details-row .blog-details-content .leave-reply-section .form-area {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 24px; }
+      .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group .form-control {
+        background-color: #38117f;
+        border: 1px solid #999999;
+        border-radius: 12px;
+        color: #ffffff;
+        padding: 17px 202px 17px 24px; }
+      .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group ::-webkit-input-placeholder {
+        color: #ffffff; }
+      .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group :-ms-input-placeholder {
+        color: #ffffff; }
+      .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group ::-ms-input-placeholder {
+        color: #ffffff; }
+      .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group ::placeholder {
+        color: #ffffff; }
+      .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group textarea {
+        height: 217px;
+        width: 100%; }
+      .blog-details-row .blog-details-content .leave-reply-section .form-area .btn-forms {
+        margin-top: 24px;
+        width: 100%; }
+  .blog-details-row .recent-posts {
+    background-color: #240255;
+    border-radius: 12px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px; }
+    .blog-details-row .recent-posts h5 {
+      color: #ffffff;
+      padding-bottom: 20px; }
+    .blog-details-row .recent-posts .recent-post {
+      padding-bottom: 10px; }
+      .blog-details-row .recent-posts .recent-post .recent-post-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 4px; }
+      .blog-details-row .recent-posts .recent-post .recent-post-details h6 {
+        color: #ffffff; }
+      .blog-details-row .recent-posts .recent-post .recent-post-details .date-n-svg p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 170%;
+        color: #cccccc; }
+  .blog-details-row .tags {
+    background-color: #240255;
+    border-radius: 12px;
+    padding: 32px 24px;
+    margin-top: 32px; }
+    .blog-details-row .tags h5 {
+      color: #ffffff;
+      padding-bottom: 20px; }
+    .blog-details-row .tags .tag-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      gap: 16px; }
+      .blog-details-row .tags .tag-list p {
+        padding: 19px 24px;
+        margin-bottom: 0;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 8px;
+        background: #38117F; }
+  .blog-details-row .follow-us {
+    background-color: #240255;
+    border-radius: 12px;
+    padding: 32px 24px;
+    margin-top: 32px; }
+    .blog-details-row .follow-us h5 {
+      color: #ffffff;
+      padding-bottom: 20px; }
