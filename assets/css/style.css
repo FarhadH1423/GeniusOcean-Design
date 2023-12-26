@@ -3029,6 +3029,9 @@ p {
     background-color: #38117f;
     padding: 45px;
     border-radius: 8px; }
+    .gateways-section .gateways-box img {
+      height: 80px;
+      width: 80px; }
     @media (max-width: 1290px) {
       .gateways-section .gateways-box {
         padding: 30px; } }
@@ -4700,16 +4703,14 @@ form.newsletter-form .template-btn {
       .blog-details-row .blog-details-content .blog-details-bottom ol > li {
         font-size: 16px; } }
   .blog-details-row .blog-details-content .blog-inner-image {
-    padding-top: 20px; }
+    padding-top: 20px;
+    gap: 24px; }
     .blog-details-row .blog-details-content .blog-inner-image img {
-      width: 50%;
+      width: 48%;
       border-radius: 8px; }
-      @media (max-width: 1290px) {
-        .blog-details-row .blog-details-content .blog-inner-image img {
-          width: 48%; } }
-      @media (max-width: 991.98px) {
-        .blog-details-row .blog-details-content .blog-inner-image img {
-          width: 50%; } }
+    @media (max-width: 575.98px) {
+      .blog-details-row .blog-details-content .blog-inner-image {
+        gap: 20px; } }
   .blog-details-row .blog-details-content .comment-section .comment-header {
     padding-top: 60px; }
     .blog-details-row .blog-details-content .comment-section .comment-header h4 {
@@ -4786,19 +4787,15 @@ form.newsletter-form .template-btn {
         border: 1px solid #999999;
         border-radius: 12px;
         color: #ffffff;
-        padding: 17px 202px 17px 24px; }
+        padding: 17px 100px 17px 24px; }
       .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group ::-webkit-input-placeholder {
-        color: #ffffff;
-        width: 100%; }
+        color: #ffffff; }
       .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group :-ms-input-placeholder {
-        color: #ffffff;
-        width: 100%; }
+        color: #ffffff; }
       .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group ::-ms-input-placeholder {
-        color: #ffffff;
-        width: 100%; }
+        color: #ffffff; }
       .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group ::placeholder {
-        color: #ffffff;
-        width: 100%; }
+        color: #ffffff; }
       .blog-details-row .blog-details-content .leave-reply-section .form-area .form-group textarea {
         height: 217px;
         width: 100%; }
@@ -4862,7 +4859,7 @@ form.newsletter-form .template-btn {
         -ms-flex-align: center;
         align-items: center;
         border-radius: 8px;
-        background: #38117F; }
+        background: #38117f; }
   .blog-details-row .follow-us {
     background-color: #240255;
     border-radius: 12px;
@@ -4875,3 +4872,51 @@ form.newsletter-form .template-btn {
     .blog-details-row {
       padding-left: 10px;
       padding-right: 10px; } }
+
+.breadcrumb-section-login {
+  height: 201px;
+  width: 100%;
+  margin-top: -200px;
+  padding-top: 255px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .breadcrumb-section-login .breadcrumb-rows {
+    padding-left: 72px;
+    padding-right: 72px; }
+  .breadcrumb-section-login .breadcrumb-content {
+    color: #ffffff; }
+  @media (max-width: 1199.98px) {
+    .breadcrumb-section-login {
+      height: 580px; }
+      .breadcrumb-section-login .breadcrumb-content h1 {
+        font-size: 50px; }
+      .breadcrumb-section-login .breadcrumb-content h4 {
+        font-size: 28px; } }
+  @media (max-width: 991.98px) {
+    .breadcrumb-section-login {
+      height: 500px; }
+      .breadcrumb-section-login .breadcrumb-content h1 {
+        font-size: 40px; }
+      .breadcrumb-section-login .breadcrumb-content h4 {
+        font-size: 24px; } }
+  @media (max-width: 767.98px) {
+    .breadcrumb-section-login {
+      height: 450px; }
+      .breadcrumb-section-login .breadcrumb-rows {
+        padding-left: 40px;
+        padding-right: 40px; }
+      .breadcrumb-section-login .breadcrumb-content h1 {
+        font-size: 32px; }
+      .breadcrumb-section-login .breadcrumb-content h4 {
+        font-size: 20px; } }
+  @media (max-width: 575.98px) {
+    .breadcrumb-section-login {
+      height: 420px; }
+      .breadcrumb-section-login .breadcrumb-rows {
+        padding-left: 30px;
+        padding-right: 30px; }
+      .breadcrumb-section-login .breadcrumb-content h1 {
+        font-size: 24px; }
+      .breadcrumb-section-login .breadcrumb-content h4 {
+        font-size: 16px; } }

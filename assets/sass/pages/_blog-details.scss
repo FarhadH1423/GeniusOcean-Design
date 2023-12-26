@@ -3,7 +3,6 @@
 }
 
 .blog-details-row {
-
   padding-left: 72px;
   padding-right: 71px;
 
@@ -46,7 +45,7 @@
         }
       }
 
-      ol>li {
+      ol > li {
         color: $secondary-shade-300;
         font-size: 18px;
         text-align: justify;
@@ -59,25 +58,15 @@
     }
 
     .blog-inner-image {
-
       padding-top: 20px;
+      gap: 24px;
 
       img {
-
-        width: 50%;
+        width: 48%;
         border-radius: 8px;
-
-        @include screen-1290 {
-          width: 48%;
-        }
-
-        @include screen-992 {
-          width: 50%;
-        }
-
-
-
-
+      }
+      @include portrait-phone {
+        gap: 20px;
       }
     }
 
@@ -148,7 +137,6 @@
             @include screen-460 {
               font-size: 16px;
             }
-
           }
         }
       }
@@ -163,7 +151,6 @@
       .reply {
         margin-left: 73px;
       }
-
     }
 
     .leave-reply-section {
@@ -189,25 +176,21 @@
             margin-bottom: 10px;
           }
 
-
-
           .form-control {
             background-color: $bg-counter-box;
             border: 1px solid $text-shade-700;
             border-radius: 12px;
             color: $text-color;
-            padding: 17px 202px 17px 24px;
+            padding: 17px 100px 17px 24px;
           }
 
           ::placeholder {
             color: $text-color;
-            width: 100%;
           }
 
           textarea {
             height: 217px;
             width: 100%;
-
           }
         }
 
@@ -235,7 +218,6 @@
 
     .recent-post {
       padding-bottom: 10px;
-
 
       .recent-post-img {
         width: 80px;
@@ -270,14 +252,10 @@
             font-weight: 400;
             line-height: 170%;
             color: $text-shade-800;
-
-
           }
         }
       }
     }
-
-
   }
 
   .tags {
@@ -285,7 +263,6 @@
     border-radius: 12px;
     padding: 32px 24px;
     margin-top: 32px;
-
 
     h5 {
       color: $text-color;
@@ -298,13 +275,11 @@
       gap: 16px;
 
       p {
-
         padding: 19px 24px;
         margin-bottom: 0;
         align-items: center;
         border-radius: 8px;
-        background: #38117F;
-
+        background: #38117f;
       }
     }
   }
@@ -314,7 +289,6 @@
     border-radius: 12px;
     padding: 32px 24px;
     margin-top: 32px;
-
 
     h5 {
       color: $text-color;
