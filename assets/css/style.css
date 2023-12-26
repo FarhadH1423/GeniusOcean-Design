@@ -1385,6 +1385,10 @@ p {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
+  @media (max-width: 575.98px) {
+    .form-btn {
+      padding: 10px 30px;
+      font-size: 14px; } }
 
 .primary-btn-forms {
   background-color: #e3106e;
@@ -1392,7 +1396,7 @@ p {
   .primary-btn-forms::before {
     content: "";
     position: absolute;
-    left: -120px;
+    left: -235px;
     top: -135%;
     width: 190%;
     height: 135%;
@@ -4801,7 +4805,8 @@ form.newsletter-form .template-btn {
         width: 100%; }
       .blog-details-row .blog-details-content .leave-reply-section .form-area .btn-forms {
         margin-top: 24px;
-        width: 100%; }
+        width: 100%;
+        font-weight: 500; }
   .blog-details-row .recent-posts {
     background-color: #240255;
     border-radius: 12px;
@@ -4874,49 +4879,266 @@ form.newsletter-form .template-btn {
       padding-right: 10px; } }
 
 .breadcrumb-section-login {
+  overflow: hidden;
   height: 201px;
   width: 100%;
-  margin-top: -200px;
+  margin-top: -230px;
   padding-top: 255px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
-  .breadcrumb-section-login .breadcrumb-rows {
-    padding-left: 72px;
-    padding-right: 72px; }
   .breadcrumb-section-login .breadcrumb-content {
     color: #ffffff; }
-  @media (max-width: 1199.98px) {
-    .breadcrumb-section-login {
-      height: 580px; }
-      .breadcrumb-section-login .breadcrumb-content h1 {
-        font-size: 50px; }
-      .breadcrumb-section-login .breadcrumb-content h4 {
-        font-size: 28px; } }
-  @media (max-width: 991.98px) {
-    .breadcrumb-section-login {
-      height: 500px; }
-      .breadcrumb-section-login .breadcrumb-content h1 {
-        font-size: 40px; }
-      .breadcrumb-section-login .breadcrumb-content h4 {
-        font-size: 24px; } }
-  @media (max-width: 767.98px) {
-    .breadcrumb-section-login {
-      height: 450px; }
-      .breadcrumb-section-login .breadcrumb-rows {
-        padding-left: 40px;
-        padding-right: 40px; }
-      .breadcrumb-section-login .breadcrumb-content h1 {
-        font-size: 32px; }
-      .breadcrumb-section-login .breadcrumb-content h4 {
-        font-size: 20px; } }
-  @media (max-width: 575.98px) {
-    .breadcrumb-section-login {
-      height: 420px; }
-      .breadcrumb-section-login .breadcrumb-rows {
-        padding-left: 30px;
-        padding-right: 30px; }
-      .breadcrumb-section-login .breadcrumb-content h1 {
-        font-size: 24px; }
-      .breadcrumb-section-login .breadcrumb-content h4 {
-        font-size: 16px; } }
+
+.login-section {
+  overflow: hidden;
+  padding-top: 80px;
+  background-color: #04032e; }
+  .login-section .login-rows {
+    border-radius: 12px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-bottom: 140px; }
+    @media (max-width: 575.98px) {
+      .login-section .login-rows {
+        padding-left: 10px;
+        padding-right: 10px; } }
+    .login-section .login-rows .login-img img {
+      width: 570px;
+      height: 800px;
+      border-radius: 12px 0px 0px 12px; }
+      @media (max-width: 991.98px) {
+        .login-section .login-rows .login-img img {
+          display: none; } }
+    .login-section .login-rows .form-section {
+      margin: 0;
+      padding: 0; }
+      .login-section .login-rows .form-section .login-form {
+        background-color: #38117f;
+        padding-bottom: 22px;
+        border-radius: 0px 12px 12px 0px; }
+        @media (max-width: 991.98px) {
+          .login-section .login-rows .form-section .login-form {
+            border-radius: 12px;
+            overflow: hidden; } }
+        .login-section .login-rows .form-section .login-form .login-logo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .login-section .login-rows .form-section .login-form .login-logo img {
+            width: 110px;
+            height: 40px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+        .login-section .login-rows .form-section .login-form h4 {
+          color: #ffffff;
+          font-weight: 700;
+          line-height: 130%;
+          text-align: center; }
+        .login-section .login-rows .form-section .login-form .login-form-area {
+          padding: 40px 60px 10px 60px; }
+          .login-section .login-rows .form-section .login-form .login-form-area .form-outline {
+            margin-bottom: 20px; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline label {
+              color: #ffffff;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 130%; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline input {
+              height: 50px;
+              border-radius: 8px;
+              border: 1px solid #e6e6eb;
+              background-color: #04032e;
+              color: #ffffff;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 130%;
+              padding: 0 20px; }
+              .login-section .login-rows .form-section .login-form .login-form-area .form-outline input:focus {
+                border: 1px solid #ccccd6; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline ::-webkit-input-placeholder {
+              color: #ffffff; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline :-ms-input-placeholder {
+              color: #ffffff; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline ::-ms-input-placeholder {
+              color: #ffffff; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline ::placeholder {
+              color: #ffffff; }
+          .login-section .login-rows .form-section .login-form .login-form-area .login-forgot {
+            padding-top: 3px;
+            text-align: center; }
+            .login-section .login-rows .form-section .login-form .login-form-area .login-forgot a {
+              color: #ffffff;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 130%; }
+              .login-section .login-rows .form-section .login-form .login-form-area .login-forgot a:hover {
+                color: #e3106e; }
+          .login-section .login-rows .form-section .login-form .login-form-area .form-check {
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-check .form-check-input {
+              background-color: #04032e;
+              width: 16px;
+              height: 16px; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-check .form-check-label {
+              padding-top: 3px; }
+          .login-section .login-rows .form-section .login-form .login-form-area .btn-forms {
+            margin-top: 5px;
+            width: 100%;
+            font-weight: 500; }
+        .login-section .login-rows .form-section .login-form .social-icon-section {
+          text-align: center; }
+          .login-section .login-rows .form-section .login-form .social-icon-section .sign-up-option {
+            padding-top: 90px; }
+          .login-section .login-rows .form-section .login-form .social-icon-section .sign-up {
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffffff; }
+
+.breadcrumb-section-login {
+  overflow: hidden;
+  height: 201px;
+  width: 100%;
+  margin-top: -230px;
+  padding-top: 255px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .breadcrumb-section-login .breadcrumb-content {
+    color: #ffffff; }
+
+.login-section {
+  overflow: hidden;
+  padding-top: 80px;
+  background-color: #04032e; }
+  .login-section .login-rows {
+    border-radius: 12px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-bottom: 140px; }
+    @media (max-width: 575.98px) {
+      .login-section .login-rows {
+        padding-left: 10px;
+        padding-right: 10px; } }
+    .login-section .login-rows .login-img img {
+      width: 570px;
+      height: 1000px;
+      border-radius: 12px 0px 0px 12px; }
+      @media (max-width: 991.98px) {
+        .login-section .login-rows .login-img img {
+          display: none; } }
+    .login-section .login-rows .form-section {
+      margin: 0;
+      padding: 0; }
+      .login-section .login-rows .form-section .login-form {
+        background-color: #38117f;
+        padding-bottom: 28px;
+        border-radius: 0px 12px 12px 0px; }
+        @media (max-width: 991.98px) {
+          .login-section .login-rows .form-section .login-form {
+            border-radius: 12px;
+            overflow: hidden; } }
+        .login-section .login-rows .form-section .login-form .login-logo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .login-section .login-rows .form-section .login-form .login-logo img {
+            width: 110px;
+            height: 40px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+        .login-section .login-rows .form-section .login-form h4 {
+          color: #ffffff;
+          font-weight: 700;
+          line-height: 130%;
+          text-align: center; }
+        .login-section .login-rows .form-section .login-form .login-form-area {
+          padding: 40px 60px 10px 60px; }
+          .login-section .login-rows .form-section .login-form .login-form-area .form-outline {
+            margin-bottom: 20px;
+            position: relative; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline .password-show {
+              position: absolute;
+              top: 46px;
+              right: 18px; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline label {
+              color: #ffffff;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 130%; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline input {
+              height: 50px;
+              border-radius: 8px;
+              border: 1px solid #e6e6eb;
+              background-color: #04032e;
+              color: #ffffff;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 130%;
+              padding: 0 20px; }
+              .login-section .login-rows .form-section .login-form .login-form-area .form-outline input:focus {
+                border: 1px solid #ccccd6; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline ::-webkit-input-placeholder {
+              color: #ffffff; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline :-ms-input-placeholder {
+              color: #ffffff; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline ::-ms-input-placeholder {
+              color: #ffffff; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-outline ::placeholder {
+              color: #ffffff; }
+          .login-section .login-rows .form-section .login-form .login-form-area .login-forgot {
+            padding-top: 3px;
+            text-align: center; }
+            .login-section .login-rows .form-section .login-form .login-form-area .login-forgot a {
+              color: #ffffff;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 130%; }
+              .login-section .login-rows .form-section .login-form .login-form-area .login-forgot a:hover {
+                color: #e3106e; }
+          .login-section .login-rows .form-section .login-form .login-form-area .form-check {
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-check .form-check-input {
+              background-color: #04032e;
+              width: 16px;
+              height: 16px; }
+            .login-section .login-rows .form-section .login-form .login-form-area .form-check .form-check-label {
+              padding-top: 3px; }
+              .login-section .login-rows .form-section .login-form .login-form-area .form-check .form-check-label .term-condition-span {
+                font-weight: 500; }
+          .login-section .login-rows .form-section .login-form .login-form-area .btn-forms {
+            margin-top: 5px;
+            width: 100%;
+            font-weight: 500; }
+        .login-section .login-rows .form-section .login-form .social-icon-section {
+          text-align: center; }
+          .login-section .login-rows .form-section .login-form .social-icon-section .sign-up-option {
+            padding-top: 90px; }
+          .login-section .login-rows .form-section .login-form .social-icon-section .sign-up {
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffffff; }

@@ -83,7 +83,7 @@
     .login-img {
       img {
         width: 570px;
-        height: 800px;
+        height: 1000px;
         border-radius: 12px 0px 0px 12px;
         @include screen-992 {
           display: none;
@@ -96,7 +96,7 @@
 
       .login-form {
         background-color: $bg-counter-box;
-        padding-bottom: 22px;
+        padding-bottom: 28px;
         border-radius: 0px 12px 12px 0px;
         @include screen-992 {
           border-radius: 12px;
@@ -126,6 +126,12 @@
           padding: 40px 60px 10px 60px;
           .form-outline {
             margin-bottom: 20px;
+            position: relative;
+            .password-show {
+              position: absolute;
+              top: 46px;
+              right: 18px;
+            }
             label {
               color: $text-color;
               font-weight: 500;
@@ -177,6 +183,10 @@
             line-height: 130%;
             .form-check-label {
               padding-top: 3px;
+
+              .term-condition-span {
+                font-weight: 500;
+              }
             }
           }
           .btn-forms {
