@@ -4903,25 +4903,25 @@ form.newsletter-form .template-btn {
       .login-section .login-rows {
         padding-left: 10px;
         padding-right: 10px; } }
-    .login-section .login-rows .login-img img {
+    .login-section .login-rows .login-img-main img {
       width: 570px;
       height: 800px;
       border-radius: 12px 0px 0px 12px; }
       @media (max-width: 991.98px) {
-        .login-section .login-rows .login-img img {
+        .login-section .login-rows .login-img-main img {
           display: none; } }
     .login-section .login-rows .form-section {
       margin: 0;
       padding: 0; }
-      .login-section .login-rows .form-section .login-form {
+      .login-section .login-rows .form-section .login-form-main {
         background-color: #38117f;
         padding-bottom: 22px;
         border-radius: 0px 12px 12px 0px; }
         @media (max-width: 991.98px) {
-          .login-section .login-rows .form-section .login-form {
+          .login-section .login-rows .form-section .login-form-main {
             border-radius: 12px;
             overflow: hidden; } }
-        .login-section .login-rows .form-section .login-form .login-logo {
+        .login-section .login-rows .form-section .login-form-main .login-logo {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -4933,27 +4933,27 @@ form.newsletter-form .template-btn {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center; }
-          .login-section .login-rows .form-section .login-form .login-logo img {
+          .login-section .login-rows .form-section .login-form-main .login-logo img {
             width: 110px;
             height: 40px;
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center; }
-        .login-section .login-rows .form-section .login-form h4 {
+        .login-section .login-rows .form-section .login-form-main h4 {
           color: #ffffff;
           font-weight: 700;
           line-height: 130%;
           text-align: center; }
-        .login-section .login-rows .form-section .login-form .login-form-area {
+        .login-section .login-rows .form-section .login-form-main .login-form-area {
           padding: 40px 60px 10px 60px; }
-          .login-section .login-rows .form-section .login-form .login-form-area .form-outline {
+          .login-section .login-rows .form-section .login-form-main .login-form-area .form-outline {
             margin-bottom: 20px; }
-            .login-section .login-rows .form-section .login-form .login-form-area .form-outline label {
+            .login-section .login-rows .form-section .login-form-main .login-form-area .form-outline label {
               color: #ffffff;
               font-weight: 500;
               font-size: 16px;
               line-height: 130%; }
-            .login-section .login-rows .form-section .login-form .login-form-area .form-outline input {
+            .login-section .login-rows .form-section .login-form-main .login-form-area .form-outline input {
               height: 50px;
               border-radius: 8px;
               border: 1px solid #e6e6eb;
@@ -4963,46 +4963,46 @@ form.newsletter-form .template-btn {
               font-size: 16px;
               line-height: 130%;
               padding: 0 20px; }
-              .login-section .login-rows .form-section .login-form .login-form-area .form-outline input:focus {
+              .login-section .login-rows .form-section .login-form-main .login-form-area .form-outline input:focus {
                 border: 1px solid #ccccd6; }
-            .login-section .login-rows .form-section .login-form .login-form-area .form-outline ::-webkit-input-placeholder {
+            .login-section .login-rows .form-section .login-form-main .login-form-area .form-outline ::-webkit-input-placeholder {
               color: #ffffff; }
-            .login-section .login-rows .form-section .login-form .login-form-area .form-outline :-ms-input-placeholder {
+            .login-section .login-rows .form-section .login-form-main .login-form-area .form-outline :-ms-input-placeholder {
               color: #ffffff; }
-            .login-section .login-rows .form-section .login-form .login-form-area .form-outline ::-ms-input-placeholder {
+            .login-section .login-rows .form-section .login-form-main .login-form-area .form-outline ::-ms-input-placeholder {
               color: #ffffff; }
-            .login-section .login-rows .form-section .login-form .login-form-area .form-outline ::placeholder {
+            .login-section .login-rows .form-section .login-form-main .login-form-area .form-outline ::placeholder {
               color: #ffffff; }
-          .login-section .login-rows .form-section .login-form .login-form-area .login-forgot {
+          .login-section .login-rows .form-section .login-form-main .login-form-area .login-forgot {
             padding-top: 3px;
             text-align: center; }
-            .login-section .login-rows .form-section .login-form .login-form-area .login-forgot a {
+            .login-section .login-rows .form-section .login-form-main .login-form-area .login-forgot a {
               color: #ffffff;
               font-weight: 400;
               font-size: 14px;
               line-height: 130%; }
-              .login-section .login-rows .form-section .login-form .login-form-area .login-forgot a:hover {
+              .login-section .login-rows .form-section .login-form-main .login-form-area .login-forgot a:hover {
                 color: #e3106e; }
-          .login-section .login-rows .form-section .login-form .login-form-area .form-check {
+          .login-section .login-rows .form-section .login-form-main .login-form-area .form-check {
             color: #ffffff;
             font-weight: 400;
             font-size: 14px;
             line-height: 130%; }
-            .login-section .login-rows .form-section .login-form .login-form-area .form-check .form-check-input {
+            .login-section .login-rows .form-section .login-form-main .login-form-area .form-check .form-check-input {
               background-color: #04032e;
               width: 16px;
               height: 16px; }
-            .login-section .login-rows .form-section .login-form .login-form-area .form-check .form-check-label {
+            .login-section .login-rows .form-section .login-form-main .login-form-area .form-check .form-check-label {
               padding-top: 3px; }
-          .login-section .login-rows .form-section .login-form .login-form-area .btn-forms {
+          .login-section .login-rows .form-section .login-form-main .login-form-area .btn-forms {
             margin-top: 5px;
             width: 100%;
             font-weight: 500; }
-        .login-section .login-rows .form-section .login-form .social-icon-section {
+        .login-section .login-rows .form-section .login-form-main .social-icon-section {
           text-align: center; }
-          .login-section .login-rows .form-section .login-form .social-icon-section .sign-up-option {
+          .login-section .login-rows .form-section .login-form-main .social-icon-section .sign-up-option {
             padding-top: 90px; }
-          .login-section .login-rows .form-section .login-form .social-icon-section .sign-up {
+          .login-section .login-rows .form-section .login-form-main .social-icon-section .sign-up {
             font-size: 20px;
             font-weight: 600;
             color: #ffffff; }
