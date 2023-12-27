@@ -892,28 +892,28 @@ p {
   background-color: #164fc8; }
 
 .business-bg {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0979b6), color-stop(108.15%, #184aca));
-  background: -webkit-linear-gradient(top, #0979b6 0%, #184aca 108.15%);
-  background: -o-linear-gradient(top, #0979b6 0%, #184aca 108.15%);
-  background: linear-gradient(180deg, #0979b6 0%, #184aca 108.15%); }
+  background: #164fc8; }
 
 .orange-shade-1 {
   background-color: #df616e; }
 
 .baby-bg {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e8895e), color-stop(108.15%, #de5d70));
-  background: -webkit-linear-gradient(top, #e8895e 0%, #de5d70 108.15%);
-  background: -o-linear-gradient(top, #e8895e 0%, #de5d70 108.15%);
-  background: linear-gradient(180deg, #e8895e 0%, #de5d70 108.15%); }
+  background: #ff3c76; }
 
 .purple-shade-1 {
   background-color: #c32baf; }
 
 .hatchling-bg {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8728c1), color-stop(108.15%, #ca2cad));
-  background: -webkit-linear-gradient(top, #8728c1 0%, #ca2cad 108.15%);
-  background: -o-linear-gradient(top, #8728c1 0%, #ca2cad 108.15%);
-  background: linear-gradient(180deg, #8728c1 0%, #ca2cad 108.15%); }
+  background: #8728c1; }
+
+.secondary-pack {
+  background: #c32baf; }
+
+.starter-pack {
+  background: #ff8a1f; }
+
+.diamond-plan {
+  background: #7e1aff; }
 
 .purple .hero-section .circle-shape-1 {
   opacity: 0.2; }
@@ -2774,6 +2774,9 @@ p {
       border: 2px solid #ffffff; }
       .offer-section .offer-box:hover .icon-wraper .icon-box {
         border: 2px solid #ffffff; }
+      .offer-section .offer-box:hover .primary-outline-offer {
+        background-color: #ffffff;
+        color: #0d0d0d; }
     .offer-section .offer-box .icon-wraper {
       position: absolute;
       top: -20%;
