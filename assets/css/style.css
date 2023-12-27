@@ -3138,7 +3138,7 @@ p {
         -ms-flex-align: center;
         align-items: center;
         position: absolute;
-        top: 44%;
+        top: 61%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -3146,7 +3146,7 @@ p {
         z-index: 11; }
       .testimonial-section .testimonial-box .icon-wraper .overlay-box {
         position: absolute;
-        top: -15px;
+        top: 0px;
         left: -10px;
         z-index: 0;
         background-color: #04032e;
