@@ -34,7 +34,6 @@
   }
 }
 
-
 @mixin screen-992 {
   @media (max-width: 991.98px) {
     @content;
@@ -61,6 +60,12 @@
 
 @mixin screen-1290 {
   @media (max-width: 1290px) {
+    @content;
+  }
+}
+
+@mixin screen-1360 {
+  @media (max-width: 1360px) {
     @content;
   }
 }

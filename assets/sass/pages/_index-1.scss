@@ -166,7 +166,7 @@
   }
 
   .counter-box {
-    padding: 50px 30px;
+    padding: 42px 30px;
     background-color: $bg-counter-box;
     border-radius: 15px;
     text-align: center;
@@ -178,15 +178,17 @@
     }
 
     h3 {
-      padding-top: 18px;
+      padding-top: 38px;
       font-size: 64px;
-      margin-bottom: 10px;
-      color: $text-color;
+      margin-bottom: 0px;
+      color: #ffffff;
+      font-weight: 600;
     }
 
     p {
       font-size: 32px;
       color: $text-color;
+      font-weight: 600;
     }
 
     .icon-wraper {
@@ -199,18 +201,22 @@
 
       .icon-box {
         background-color: $bg-counter-box;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 60%;
+        left: 60%;
         transform: translate(-50%, -50%);
         z-index: 11;
         color: $text-color;
+        img {
+          height: 60px;
+          width: 60px;
+        }
       }
 
       .overlay-box {
@@ -219,8 +225,8 @@
         left: 0;
         z-index: 0;
         background-color: $secondary-color;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
       }
     }
@@ -229,7 +235,7 @@
       margin-bottom: 80px;
 
       h3 {
-        padding-top: 10px;
+        padding-top: 45px;
         font-size: 40px;
       }
 
@@ -242,7 +248,6 @@
       margin-bottom: 80px;
 
       h3 {
-        padding-top: 10px;
         font-size: 40px;
       }
 
@@ -255,7 +260,6 @@
       margin-bottom: 80px;
 
       h3 {
-        padding-top: 10px;
         font-size: 40px;
       }
 
@@ -268,7 +272,6 @@
       margin-bottom: 0px;
 
       h3 {
-        padding-top: 20px;
         font-size: 40px;
       }
 
@@ -281,7 +284,6 @@
       margin-bottom: 80px;
 
       h3 {
-        padding-top: 20px;
         font-size: 40px;
       }
 
@@ -320,7 +322,7 @@
       margin-bottom: 80px;
 
       h3 {
-        padding-top: 20px;
+        padding-top: 45px;
         font-size: 40px;
       }
 
@@ -346,15 +348,19 @@
 
   .about-img {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 725px;
-    // max-width: 946px;
+    right: 105px;
+    bottom: 112px;
+    width: 730.358px;
+    height: 498.001px;
   }
 
   .about-us-row {
     padding-left: 72px;
     padding-right: 72px;
+
+    .abt-btn {
+      margin-top: 25px;
+    }
 
     @include portrait-phone {
       padding-left: 10px;
@@ -386,20 +392,65 @@
   .about-paragraph {
     color: $text-color;
     font-weight: 400;
+    z-index: 2;
   }
 
-  @include screen-1400 {
+  @include screen-1700 {
     .about-img {
-      height: 720px;
-      width: 850px;
+      right: 59px;
+      bottom: 112px;
+      width: 720.358px;
+      height: 495.001px;
+    }
+  }
+
+  @include screen-1600 {
+    .about-img {
+      right: 15px;
+      bottom: 112px;
+      width: 718.358px;
+      height: 493.001px;
+    }
+  }
+
+  @include screen-1460 {
+    .about-img {
+      right: 0px;
+      bottom: 112px;
+      width: 693.358px;
+      height: 488.001px;
+    }
+  }
+  @include screen-1360 {
+    .about-img {
+      right: 0px;
+      bottom: 118px;
+      width: 653.358px;
+      height: 473.001px;
+    }
+  }
+
+  @include screen-1290 {
+    .about-paragraph {
+      width: 500px;
+    }
+    .about-img {
+      right: 0px;
+      bottom: 118px;
+      width: 653.358px;
+      height: 473.001px;
     }
   }
 
   @include large-screen {
+    .about-paragraph {
+      width: 450px;
+    }
     .about-img {
-      z-index: 0;
-      width: 700px;
-      height: 650px;
+      right: 0px;
+      bottom: 118px;
+      width: 534.358px;
+      height: 417.001px;
     }
 
     h6 {
@@ -416,7 +467,22 @@
     }
   }
 
+  @include screen-1060 {
+    .about-paragraph {
+      width: 420px;
+    }
+    .about-img {
+      right: 0px;
+      bottom: 128px;
+      width: 492.358px;
+      height: 401.001px;
+    }
+  }
+
   @include screen-992 {
+    .about-paragraph {
+      width: 100%;
+    }
     .about-img {
       display: none;
     }
@@ -1421,8 +1487,9 @@
     padding: 45px;
     border-radius: 8px;
     img {
-      height: 80px;
       width: 80px;
+      height: 80px;
+      border-radius: 80px;
     }
 
     // max-width: 170px;
@@ -1549,18 +1616,23 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 61%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 11;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
       }
 
       .overlay-box {
         position: absolute;
-        top: 0px;
+        top: -10px;
         left: -10px;
         z-index: 0;
-        background-color: $secondary-color;
+        background-color: #04032e;
         width: 120px;
         height: 120px;
         border-radius: 50%;

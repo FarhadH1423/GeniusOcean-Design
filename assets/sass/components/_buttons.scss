@@ -2,7 +2,7 @@
 .template-btn {
   padding: 14px 51px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   // text-transform: uppercase;
   position: relative;
   display: inline-block;
@@ -57,14 +57,30 @@
   overflow: hidden;
   transition: $transition-base;
 
-  @include portrait-phone {
-    padding: 10px 30px;
-    font-size: 14px;
-  }
+  // @include screen-1860 {
+  //     display: flex;
+  //     width: 100%;
+  // }
 
+  // @include screen-768 {
+  //   padding: 14px 51px;
+  //   font-size: 18px;
+  // }
 
+  // @include portrait-phone {
+  //   padding: 10px 30px;
+  //   font-size: 14px;
+  // }
 
+  // @include screen-460 {
+  //   padding: 14px 51px;
+  //   font-size: 18px;
+  // }
 
+  // @include screen-400 {
+  //   padding: 14px 51px;
+  //   font-size: 18px;
+  // }
 }
 
 .primary-btn-forms {
@@ -74,7 +90,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: -235px;
+    left: -120px;
     top: -135%;
     width: 190%;
     height: 135%;

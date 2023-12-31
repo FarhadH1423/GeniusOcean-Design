@@ -1334,7 +1334,7 @@ p {
 .template-btn {
   padding: 14px 51px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -1385,10 +1385,6 @@ p {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
-  @media (max-width: 575.98px) {
-    .form-btn {
-      padding: 10px 30px;
-      font-size: 14px; } }
 
 .primary-btn-forms {
   background-color: #e3106e;
@@ -1396,7 +1392,7 @@ p {
   .primary-btn-forms::before {
     content: "";
     position: absolute;
-    left: -235px;
+    left: -120px;
     top: -135%;
     width: 190%;
     height: 135%;
@@ -2132,7 +2128,7 @@ p {
         padding-left: 10px;
         padding-right: 10px; } }
   .counter-section .counter-box {
-    padding: 50px 30px;
+    padding: 42px 30px;
     background-color: #38117f;
     border-radius: 15px;
     text-align: center;
@@ -2144,13 +2140,15 @@ p {
       -webkit-box-shadow: var(--box-shadow);
       box-shadow: var(--box-shadow); }
     .counter-section .counter-box h3 {
-      padding-top: 18px;
+      padding-top: 38px;
       font-size: 64px;
-      margin-bottom: 10px;
-      color: #ffffff; }
+      margin-bottom: 0px;
+      color: #ffffff;
+      font-weight: 600; }
     .counter-section .counter-box p {
       font-size: 32px;
-      color: #ffffff; }
+      color: #ffffff;
+      font-weight: 600; }
     .counter-section .counter-box .icon-wraper {
       position: absolute;
       top: -20%;
@@ -2162,8 +2160,8 @@ p {
       height: 100px; }
       .counter-section .counter-box .icon-wraper .icon-box {
         background-color: #38117f;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2175,27 +2173,30 @@ p {
         -ms-flex-align: center;
         align-items: center;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 60%;
+        left: 60%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         z-index: 11;
         color: #ffffff; }
+        .counter-section .counter-box .icon-wraper .icon-box img {
+          height: 60px;
+          width: 60px; }
       .counter-section .counter-box .icon-wraper .overlay-box {
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
         background-color: #04032e;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%; }
     @media (max-width: 400px) {
       .counter-section .counter-box {
         margin-bottom: 80px; }
         .counter-section .counter-box h3 {
-          padding-top: 10px;
+          padding-top: 45px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -2203,7 +2204,6 @@ p {
       .counter-section .counter-box {
         margin-bottom: 80px; }
         .counter-section .counter-box h3 {
-          padding-top: 10px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -2211,7 +2211,6 @@ p {
       .counter-section .counter-box {
         margin-bottom: 80px; }
         .counter-section .counter-box h3 {
-          padding-top: 10px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -2219,7 +2218,6 @@ p {
       .counter-section .counter-box {
         margin-bottom: 0px; }
         .counter-section .counter-box h3 {
-          padding-top: 20px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -2227,7 +2225,6 @@ p {
       .counter-section .counter-box {
         margin-bottom: 80px; }
         .counter-section .counter-box h3 {
-          padding-top: 20px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -2251,7 +2248,7 @@ p {
       .counter-section .counter-box {
         margin-bottom: 80px; }
         .counter-section .counter-box h3 {
-          padding-top: 20px;
+          padding-top: 45px;
           font-size: 40px; }
         .counter-section .counter-box p {
           font-size: 20px; } }
@@ -2267,12 +2264,15 @@ p {
   overflow: hidden; }
   .about-us-section .about-img {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 725px; }
+    right: 105px;
+    bottom: 112px;
+    width: 730.358px;
+    height: 498.001px; }
   .about-us-section .about-us-row {
     padding-left: 72px;
     padding-right: 72px; }
+    .about-us-section .about-us-row .abt-btn {
+      margin-top: 25px; }
     @media (max-width: 575.98px) {
       .about-us-section .about-us-row {
         padding-left: 10px;
@@ -2294,16 +2294,48 @@ p {
     color: #ffffff; }
   .about-us-section .about-paragraph {
     color: #ffffff;
-    font-weight: 400; }
-  @media (max-width: 1399.98px) {
+    font-weight: 400;
+    z-index: 2; }
+  @media (max-width: 1700px) {
     .about-us-section .about-img {
-      height: 720px;
-      width: 850px; } }
+      right: 59px;
+      bottom: 112px;
+      width: 720.358px;
+      height: 495.001px; } }
+  @media (max-width: 1600px) {
+    .about-us-section .about-img {
+      right: 15px;
+      bottom: 112px;
+      width: 718.358px;
+      height: 493.001px; } }
+  @media (max-width: 1460px) {
+    .about-us-section .about-img {
+      right: 0px;
+      bottom: 112px;
+      width: 693.358px;
+      height: 488.001px; } }
+  @media (max-width: 1360px) {
+    .about-us-section .about-img {
+      right: 0px;
+      bottom: 118px;
+      width: 653.358px;
+      height: 473.001px; } }
+  @media (max-width: 1290px) {
+    .about-us-section .about-paragraph {
+      width: 500px; }
+    .about-us-section .about-img {
+      right: 0px;
+      bottom: 118px;
+      width: 653.358px;
+      height: 473.001px; } }
   @media (max-width: 1199.98px) {
+    .about-us-section .about-paragraph {
+      width: 450px; }
     .about-us-section .about-img {
-      z-index: 0;
-      width: 700px;
-      height: 650px; }
+      right: 0px;
+      bottom: 118px;
+      width: 534.358px;
+      height: 417.001px; }
     .about-us-section h6 {
       font-size: 16px; }
     .about-us-section .about-paragraph {
@@ -2311,7 +2343,17 @@ p {
     .about-us-section .template-btn {
       font-size: 14px;
       padding: 14px 45px; } }
+  @media (max-width: 1059.98px) {
+    .about-us-section .about-paragraph {
+      width: 420px; }
+    .about-us-section .about-img {
+      right: 0px;
+      bottom: 128px;
+      width: 492.358px;
+      height: 401.001px; } }
   @media (max-width: 991.98px) {
+    .about-us-section .about-paragraph {
+      width: 100%; }
     .about-us-section .about-img {
       display: none; }
     .about-us-section h6 {
@@ -3037,8 +3079,9 @@ p {
     padding: 45px;
     border-radius: 8px; }
     .gateways-section .gateways-box img {
+      width: 80px;
       height: 80px;
-      width: 80px; }
+      border-radius: 80px; }
     @media (max-width: 1290px) {
       .gateways-section .gateways-box {
         padding: 30px; } }
@@ -3138,15 +3181,19 @@ p {
         -ms-flex-align: center;
         align-items: center;
         position: absolute;
-        top: 61%;
+        top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         z-index: 11; }
+        .testimonial-section .testimonial-box .icon-wraper .icon-box img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%; }
       .testimonial-section .testimonial-box .icon-wraper .overlay-box {
         position: absolute;
-        top: 0px;
+        top: -10px;
         left: -10px;
         z-index: 0;
         background-color: #04032e;
@@ -4298,6 +4345,10 @@ form.newsletter-form .template-btn {
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           z-index: 11; }
+          .investor-section .investor-rows .counter-box .icon-wraper .icon-box img {
+            width: 213px;
+            height: 213px;
+            border-radius: 50%; }
         .investor-section .investor-rows .counter-box .icon-wraper .overlay-box {
           position: absolute;
           top: -101px;
